@@ -621,6 +621,7 @@ footer .wordmark .dot{color:var(--sanguine)}
     if(!d1){cta.textContent="Start move 1";cta.href="#move1";}
     else if(!d2){cta.textContent="Start move 2";cta.href="#move2";}
     else{cta.textContent="Today's 15 minutes";cta.href="#daily";}
+    if(d1&&window.__stwsFlows)window.__stwsFlows.activity.refresh();
     gate2();
   }
   // Move 2 stays locked until move 1 is sent. Editing keeps both open.
@@ -639,7 +640,7 @@ footer .wordmark .dot{color:var(--sanguine)}
     let data=store.get(DRAFT)||{},idx=0,editing=false;
     if(kind==="activity"){const q=store.get("stws-questionnaire")||{};for(const k of["name","email"])if(!data[k]&&q[k])data[k]=q[k];}
     const qInfo=()=>{const q=store.get("stws-questionnaire")||{};return q.name&&q.email?q:null;};
-    let showId=!(kind==="activity"&&qInfo());
+    let showId=!(kind==="activity"&&qInfo()),wantId=false;
     const STEPS=()=>showId?F.steps:F.steps.slice(1);
     const syncId=()=>{if(kind==="activity"&&!showId){const q=qInfo();if(q){data.name=q.name;data.email=q.email;}else showId=true;}};
 
@@ -904,7 +905,7 @@ Give up to 5 highlights, most important first. Every quote must appear verbatim 
       const s=STEPS()[idx],n=STEPS().length;root.replaceChildren();
       const top=el("div",{class:"flow-top"},[el("span",{class:"eyebrow",text:`Move ${F.move} · ${F.label}`}),el("span",{class:"count"+(editing?" editing":""),text:editing?`Editing · step ${idx+1} of ${n}`:`Step ${idx+1} of ${n}`})]);
       syncId();
-      if(kind==="activity"&&!showId){const q=qInfo();const who=el("button",{type:"button",class:"as-who",title:"Not you? Change name or email",text:`as ${q.name} · not you?`});who.addEventListener("click",()=>{readStep();showId=true;idx=0;renderStep();focusHead();});top.insertBefore(who,top.lastChild);}
+      if(kind==="activity"&&!showId){const q=qInfo();const who=el("button",{type:"button",class:"as-who",title:"Not you? Change name or email",text:`as ${q.name} · not you?`});who.addEventListener("click",()=>{readStep();wantId=true;showId=true;idx=0;renderStep();focusHead();});top.insertBefore(who,top.lastChild);}
       const bar=el("div",{class:"bar"},el("i",{style:`width:${Math.round(idx/n*100)}%`}));
       const body=el("div",{class:"flow-body"});
       if(s.time)body.append(el("p",{class:"step-time",text:s.time}));
@@ -1004,7 +1005,7 @@ Give up to 5 highlights, most important first. Every quote must appear verbatim 
     }
 
     if(store.get(DONE)){renderDone(null);setStatus(F.move,true);}else renderStep();
-    return{load:async()=>{if(!(DB&&ME))return;try{const snap=await DB.doc(kind+"/"+ME).get();if(snap.exists){const d=snap.data();data={...d};delete data.submittedAt;store.set(DRAFT,data);store.set(DRAFT+"-saved",data);store.set(DONE,true);if(d.submittedAt)store.set(SENT,d.submittedAt);if(!editing)renderDone(d.submittedAt);setStatus(F.move,true);}}catch(e){}}};
+    return{refresh:()=>{if(kind==="activity"&&showId&&!wantId&&!editing&&idx===0&&!store.get(DONE)&&qInfo()){showId=false;syncId();renderStep();}},load:async()=>{if(!(DB&&ME))return;try{const snap=await DB.doc(kind+"/"+ME).get();if(snap.exists){const d=snap.data();data={...d};delete data.submittedAt;store.set(DRAFT,data);store.set(DRAFT+"-saved",data);store.set(DONE,true);if(d.submittedAt)store.set(SENT,d.submittedAt);if(!editing)renderDone(d.submittedAt);setStatus(F.move,true);}}catch(e){}}};
   }
 
 
@@ -1161,6 +1162,7 @@ Give up to 5 highlights, most important first. Every quote must appear verbatim 
   async function loadDaily(){if(!(DB&&ME))return;try{const snap=await DB.doc("daily/"+ME).get();if(snap.exists){const r=snap.data();if(!daily||String(r.updated||"")>String(daily.updated||"")){daily=r;store.set(DKEY,daily);renderDaily();}}else if(daily){saveDaily();}}catch(e){}}
 
   const flows={questionnaire:makeFlow("questionnaire"),activity:makeFlow("activity")};
+  window.__stwsFlows=flows;
   gate2();
   ready.then(async()=>{await flows.questionnaire.load();await flows.activity.load();await loadDaily();let owner=false;try{owner=USER?await USER.isOwner():false}catch(e){}if(owner&&DB)startOwnerView();});
 
