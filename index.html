@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Studio to Work: get ready for your first or next design role, with a one-hour face-to-face session with Ravi Krishnan.">
+<style>html,body{margin:0}body{font-size:14px}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Studio to Work Personal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap">
+<style>
+/* Layout: Tuning·Sketch brand (paper panel, Fraunces + Plex, sanguine) pushed harder — an ink hero with one blunt claim,
+   three numbered moves (a real sequence), and forms that show one question at a time. Single light theme, like the original. */
+:root{
+  --ground:#C7CBD1; --paper:#E9E4D6; --paper-line:#C9C0A8; --card:#F2EEE2; --field:#FBF8F0;
+  --ink:#201C17; --ink-soft:#565045; --ink-faint:#7A7262;
+  --indigo:#2E4A5E; --sanguine:#A8402C; --sanguine-deep:#7E2E1F; --sanguine-lite:#EE8A70; --on-ink:#EFEADC; --on-ink-soft:#B9B1A0;
+  --good:#2F5E3E; --good-bg:#DEE5D0; --warn-bg:#F1E3C9;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --hand:'Caveat','Segoe Print','Bradley Hand',cursive;
+  --radius:3px; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.page-panel{max-width:1240px;margin:36px auto;background:var(--paper);border-radius:22px;overflow:clip;box-shadow:0 20px 60px rgba(32,28,23,.18),0 2px 8px rgba(32,28,23,.08)}
+@media (max-width:760px){body{background:var(--paper)}.page-panel{margin:0;border-radius:0;box-shadow:none}}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:28px}
+@media (max-width:640px){.wrap{padding-inline:20px}}
+.eyebrow{font-family:var(--serif);font-style:italic;font-weight:500;font-size:15px;color:var(--sanguine-deep)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--sanguine);outline-offset:2px}
+
+/* nav */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(233,228,214,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--paper-line)}
+header.site nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.wordmark{font-family:var(--serif);font-weight:600;font-size:19px;text-decoration:none;color:var(--ink)}
+.wordmark .dot{color:var(--sanguine)}
+.nav-cta{background:var(--sanguine);color:#FBF7EE;padding:9px 18px;border-radius:var(--radius);text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap}
+.nav-cta:hover{background:var(--sanguine-deep)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:var(--radius);text-decoration:none;font:inherit;font-size:16px;font-weight:600;border:1.5px solid transparent;cursor:pointer;background:var(--sanguine);color:#FBF7EE}
+.btn:hover{background:var(--sanguine-deep)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn.quiet{background:transparent;color:var(--ink-soft);border-color:transparent;padding-inline:8px;font-weight:500}
+.btn.quiet:hover{color:var(--ink);background:transparent;text-decoration:underline}
+.btn[disabled]{opacity:.6;cursor:progress}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+/* hero */
+.hero{padding-block:44px 40px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:24px}}
+.hero h1{font-size:clamp(42px,6.6vw,78px);font-weight:700;letter-spacing:-.015em;margin-top:10px}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--sanguine)}
+.hero .lede{margin-top:14px;font-size:19px;color:var(--ink-soft)}
+.hero .btn-row{margin-top:22px;gap:16px}
+.when{font-family:var(--mono);font-size:13px;color:var(--ink-faint)}
+.gains-title{display:block;margin-top:30px;font-family:var(--hand);font-size:22px;color:var(--sanguine-deep)}
+.gains{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:540px}
+@media (max-width:520px){.gains{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gains li{display:grid;gap:6px;justify-items:start;align-content:start;font-size:14px;font-weight:500;line-height:1.3}
+.gains svg,.mi,.bring svg{color:var(--indigo)}
+.gains svg{width:36px;height:36px}
+.hero-art{margin:0}
+.hero-art svg{width:100%;height:auto;display:block;color:var(--ink)}
+.hero-art .anno{font-family:var(--hand);font-size:23px;fill:var(--sanguine-deep);stroke:none}
+
+section{padding-block:56px}
+.head{max-width:60ch;margin-bottom:28px;display:grid;gap:8px}
+.head h2{font-size:clamp(30px,4.2vw,44px)}
+.head p:not(.eyebrow){color:var(--ink-soft);font-size:17px}
+
+/* moves */
+.moves{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+@media (max-width:820px){.moves{grid-template-columns:1fr}}
+.move{padding:22px 22px 26px 0;display:grid;gap:10px;align-content:start;border-bottom:1px solid var(--paper-line)}
+.move + .move{padding-left:22px;border-left:1px solid var(--paper-line)}
+@media (max-width:820px){.move + .move{padding-left:0;border-left:0}}
+.move-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.move .n{font-family:var(--serif);font-size:60px;font-weight:700;line-height:.85;color:var(--sanguine)}
+.mi{width:42px;height:42px;margin-right:auto;margin-left:14px;align-self:center}
+.move.done .n{color:var(--paper-line)}
+.status{font-family:var(--mono);font-size:12px;padding:4px 9px;border-radius:var(--radius);border:1px solid var(--paper-line);color:var(--ink-faint);white-space:nowrap}
+.move.done .status{background:var(--good-bg);border-color:var(--good-bg);color:var(--good)}
+.move h3{font-size:24px}
+.move .time{font-family:var(--mono);font-size:13px;color:var(--sanguine-deep)}
+.move p{color:var(--ink-soft);font-size:15.5px}
+.move .btn{justify-self:start;margin-top:6px;padding:11px 20px;font-size:15px}
+.reassure{margin-top:18px;font-family:var(--hand);font-size:21px;color:var(--ink-soft)}
+
+/* stepper */
+.flow{background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius);overflow:hidden}
+.flow-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 26px;border-bottom:1px solid var(--paper-line);flex-wrap:wrap}
+.flow-top .count{font-family:var(--mono);font-size:13px;color:var(--ink-faint)}
+.bar{height:4px;background:var(--paper-line)}
+.bar i{display:block;height:100%;background:var(--sanguine);width:0;transition:width .3s ease}
+.flow-body{padding:clamp(24px,4vw,44px) clamp(20px,4vw,44px) 10px;display:grid;gap:22px;min-height:300px;align-content:start}
+.step-h{font-size:clamp(26px,3.4vw,36px);max-width:24ch}
+.step-p{color:var(--ink-soft);font-size:16px;margin-top:-10px;max-width:58ch}
+.step-time{font-family:var(--mono);font-size:12.5px;color:var(--sanguine-deep);margin-bottom:-12px}
+.flow-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px clamp(20px,4vw,44px) 26px;flex-wrap:wrap}
+.flow-nav .hint{font-size:13px;color:var(--ink-faint)}
+.err{font-family:var(--hand);font-size:20px;color:var(--sanguine);min-height:1.2em;margin-top:-8px}
+.q{display:grid;gap:8px;min-width:0;max-width:640px}
+.q > label,.q > .ql{font-size:15px;font-weight:500}
+.q .hint{font-weight:400;color:var(--ink-faint);font-size:13.5px}
+input[type=text],input[type=email],input[type=url],textarea{width:100%;padding:13px 14px;border:1px solid var(--paper-line);border-radius:var(--radius);background:var(--field);font-family:var(--sans);font-size:16px;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+input:focus,textarea:focus{outline:1.5px solid var(--sanguine);outline-offset:0;border-color:var(--sanguine)}
+::placeholder{color:var(--ink-faint)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt span{display:inline-block;padding:9px 15px;border:1px solid var(--paper-line);border-radius:var(--radius);font-size:15px;background:var(--field);color:var(--ink-soft)}
+.opt input:hover + span{border-color:var(--ink-soft)}
+.opt input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.opt input:focus-visible + span{outline:2px solid var(--sanguine);outline-offset:2px}
+.scale-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px;align-items:center;padding-block:10px;border-bottom:1px solid var(--paper-line);max-width:680px}
+@media (max-width:560px){.scale-row{grid-template-columns:1fr}}
+.scale-row .ql{font-size:15.5px}
+.scale{display:flex;gap:6px}
+.scale .opt span{width:42px;text-align:center;padding-inline:0;font-family:var(--mono)}
+.scale .opt[data-tip]:hover::after,.scale .opt[data-tip]:focus-within::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:13px;line-height:1.35;padding:7px 10px;border-radius:var(--radius);width:max-content;max-width:190px;text-align:center;z-index:5;pointer-events:none}
+.scale .opt:nth-child(-n+2)[data-tip]::after{left:0;transform:none}
+.scale .opt:nth-last-child(-n+2)[data-tip]::after{left:auto;right:0;transform:none}
+.tip-cap{grid-column:1/-1;font-family:var(--hand);font-size:19px;color:var(--sanguine-deep);min-height:1.2em;margin-top:-4px}
+.tip-cap.idle{color:var(--ink-faint)}
+.scale .opt[data-tip] span{cursor:help;border-style:dashed;border-color:var(--ink-faint);transition:transform .12s ease,border-color .12s ease}
+.scale .opt[data-tip]:hover span{transform:translateY(-2px);border-style:solid;border-color:var(--sanguine);color:var(--ink)}
+.scale .opt[data-tip] input:checked + span{border-style:solid}
+.scale .opt[data-tip]:hover::before,.scale .opt[data-tip]:focus-within::before{content:"";position:absolute;bottom:calc(100% + 2px);left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--ink);z-index:5;pointer-events:none}
+.scale .opt[data-tip]::after{box-shadow:0 6px 18px rgba(32,28,23,.25)}
+.scale-row:first-of-type .scale .opt span{animation:nudge 1.6s ease-in-out .6s 2}
+.scale .opt:nth-child(2) span{animation-delay:.75s}.scale .opt:nth-child(3) span{animation-delay:.9s}.scale .opt:nth-child(4) span{animation-delay:1.05s}.scale .opt:nth-child(5) span{animation-delay:1.2s}
+@keyframes nudge{0%,100%{transform:none;border-color:var(--ink-faint)}30%{transform:translateY(-3px);border-color:var(--sanguine)}}
+@media (prefers-reduced-motion: reduce){.scale .opt span{animation:none!important}}
+.wc{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);text-align:right}
+.wc.over{color:var(--sanguine)}
+details.stuck{max-width:640px;border-top:1px dashed var(--paper-line);padding-top:12px}
+details.stuck summary{cursor:pointer;font-family:var(--hand);font-size:21px;color:var(--sanguine-deep)}
+details.stuck p{margin-top:8px;font-size:14.5px;color:var(--ink-soft)}
+details.guide{max-width:680px;border:1px dashed var(--ink-faint);border-radius:var(--radius);padding:12px 18px 16px;background:var(--field)}
+details.guide summary{cursor:pointer;font-family:var(--hand);font-size:23px;color:var(--sanguine-deep)}
+.gtabs{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.gtab{font:inherit;font-size:14px;font-weight:500;padding:7px 14px;border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:var(--radius);cursor:pointer}
+.gtab[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.gpane{margin-top:14px;display:grid;gap:12px;font-size:15px}
+.gpane ol{margin:0;padding:0;list-style:none;counter-reset:g;border-top:1px solid var(--paper-line)}
+.gpane li{counter-increment:g;display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:2px 10px;padding-block:9px;border-bottom:1px solid var(--paper-line);align-items:baseline}
+.gpane li::before{content:counter(g);font-family:var(--serif);font-weight:700;font-size:19px;color:var(--sanguine)}
+.gpane li b{font-weight:600}
+.gpane li .budget{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);white-space:nowrap}
+.gpane li p{grid-column:2/-1;color:var(--ink-soft);font-size:14.5px}
+.gtip{font-family:var(--hand);font-size:19px;color:var(--ink-soft)}
+.caution{margin-top:10px;padding:10px 14px;background:var(--warn-bg);border:1px solid var(--paper-line);border-radius:var(--radius);font-size:14px;color:var(--ink-soft);line-height:1.5}
+.caution b{color:var(--sanguine-deep);font-weight:600}
+.review{max-width:680px;border:1px solid var(--ink);border-radius:var(--radius);background:var(--field);padding:18px 20px;display:grid;gap:12px}
+.rv-title{font-family:var(--hand);font-size:26px;color:var(--sanguine-deep)}
+.rv-overall{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--ink);margin-top:2px}
+.rv-note,.rv-legend{font-size:13.5px;color:var(--ink-faint)}
+.rv-wait{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-family:var(--hand);font-size:20px;color:var(--ink-soft)}
+.annot{font-size:15.5px;line-height:1.9;background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius);padding:14px 16px;white-space:pre-wrap;overflow-wrap:anywhere}
+.annot mark{position:relative;background:none;color:inherit;cursor:help}
+.annot mark.ai{background:#F3D9CF;border-bottom:2px solid var(--sanguine);padding:1px 2px}
+.annot mark.local{border-bottom:2px dotted var(--sanguine)}
+.annot mark sup{font-family:var(--mono);font-size:10.5px;color:#FBF7EE;background:var(--sanguine);border-radius:2px;padding:0 3px;margin-left:3px}
+.annot mark:hover::after,.annot mark:focus::after{content:attr(data-note);position:absolute;left:0;top:calc(100% + 6px);background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:13px;line-height:1.4;padding:7px 10px;border-radius:var(--radius);width:max-content;max-width:240px;z-index:6;white-space:normal;box-shadow:0 6px 18px rgba(32,28,23,.25)}
+.rv-h{font-family:var(--serif);font-size:17px;font-weight:600;margin:6px 0 0}
+.rv-parts,.rv-checks{list-style:none;margin:0;padding:0;border-top:1px solid var(--paper-line)}
+.rv-parts li{display:grid;grid-template-columns:96px 130px minmax(0,1fr);gap:4px 10px;padding-block:8px;border-bottom:1px solid var(--paper-line);align-items:baseline;font-size:14.5px}
+@media (max-width:560px){.rv-parts li{grid-template-columns:96px minmax(0,1fr)}.rv-parts .pn{grid-column:1/-1}}
+.chip{font-family:var(--mono);font-size:12px;padding:2px 7px;border-radius:var(--radius);white-space:nowrap;justify-self:start}
+.chip.strong{background:var(--good-bg);color:var(--good)}
+.chip.weak{background:var(--warn-bg);color:#7A5000}
+.chip.missing{background:#F3D9CF;color:var(--sanguine-deep)}
+.pn{color:var(--ink-soft)}
+.rv-items{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.rv-items li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:14.5px}
+.rv-items .num{width:22px;height:22px;border-radius:2px;background:var(--sanguine);color:#FBF7EE;font-family:var(--mono);font-size:12px;display:grid;place-items:center}
+.rv-items q{font-style:italic;color:var(--ink)}
+.rv-items p{color:var(--ink-soft)}
+.rv-items .fix{color:var(--sanguine-deep)}
+.rv-strength{font-size:14.5px;color:var(--ink-soft)}
+.rv-strength b{color:var(--ink)}
+.rv-checks li{padding-block:7px;border-bottom:1px solid var(--paper-line);font-size:14.5px;padding-left:24px;position:relative;color:var(--ink-soft)}
+.rv-checks li::before{position:absolute;left:2px;font-weight:600}
+.rv-checks li.ok::before{content:"✓";color:var(--good)}
+.rv-checks li.no::before{content:"!";color:var(--sanguine)}
+.title-tip{display:grid;gap:8px;font-size:14px;color:var(--ink-soft);padding-top:4px}
+.title-tip .formula{font-size:14.5px;color:var(--ink)}
+.title-tip .formula .blank{font-size:12.5px}
+.ex{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:4px 10px;align-items:baseline;font-size:14px}
+.ex .weak{color:var(--ink-faint);text-decoration:line-through;text-decoration-color:var(--sanguine)}
+.ex .arr{color:var(--sanguine)}
+.ex .strong{color:var(--ink)}
+@media (max-width:560px){.ex{grid-template-columns:auto minmax(0,1fr)}.ex .arr{display:none}.ex .strong{margin-bottom:6px}}
+.title-check{font-family:var(--hand);font-size:19px;min-height:1.2em;color:var(--ink-faint)}
+.title-check.ok{color:var(--good)}
+.title-check.warn{color:var(--sanguine)}
+.tpl{font-size:15.5px;line-height:1.9;color:var(--ink)}
+.blank{background:var(--paper);border-bottom:1.5px dashed var(--sanguine);padding:1px 4px;color:var(--sanguine-deep);font-family:var(--mono);font-size:13px;white-space:nowrap}
+.gnote{font-size:13.5px;color:var(--sanguine-deep);min-height:1.2em}
+.sample-label{font-family:var(--mono);font-size:12.5px;color:var(--sanguine-deep)}
+.sample h4{font-family:var(--serif);font-size:18px;font-weight:600;margin:0}
+.sample p{color:var(--ink-soft);line-height:1.65}
+.sample mark{background:none;border-bottom:1.5px solid var(--paper-line);color:inherit;padding:0}
+.sample mark[data-part]::after{content:attr(data-part);font-family:var(--mono);font-size:10.5px;color:var(--sanguine);vertical-align:super;margin-left:2px}
+
+/* done + fallback */
+.done-panel{padding:clamp(28px,4vw,48px);display:grid;gap:14px;justify-items:start}
+.done-panel .big{font-family:var(--hand);font-size:34px;color:var(--good);line-height:1}
+.done-panel h3{font-size:clamp(26px,3.2vw,34px)}
+.done-panel p{color:var(--ink-soft);max-width:56ch}
+.result{border:1px solid var(--paper-line);border-radius:var(--radius);padding:18px 20px;display:grid;gap:10px;background:var(--warn-bg);margin:0 clamp(20px,4vw,44px) 26px}
+.result strong{font-family:var(--hand);font-size:23px;color:var(--sanguine-deep);font-weight:600}
+.result p{font-size:15px;color:var(--ink-soft)}
+.result textarea{min-height:140px;font-family:var(--mono);font-size:12.5px}
+.addr{font-family:var(--mono);font-size:14px;color:var(--ink);user-select:all;border-bottom:1px solid var(--paper-line)}
+.meta{font-size:13.5px;color:var(--ink-faint)}
+
+/* bring */
+.bring{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+@media (max-width:720px){.bring{grid-template-columns:1fr}}
+.bring div{padding:18px 18px 18px 0;border-bottom:1px solid var(--paper-line);display:flex;gap:14px;align-items:center}
+.bring div + div{padding-left:18px;border-left:1px solid var(--paper-line)}
+@media (max-width:720px){.bring div + div{padding-left:0;border-left:0}}
+.bring b{font-family:var(--serif);font-size:20px;font-weight:600}
+.bring svg{width:38px;height:38px}
+.bring span{color:var(--ink-soft);font-size:15px}
+
+/* daily */
+.daily{background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius)}
+.d-intro{display:flex;gap:22px;align-items:center;padding:clamp(22px,4vw,36px);flex-wrap:wrap}
+.d-intro svg{width:64px;height:64px;color:var(--indigo);flex:none}
+.d-intro div{flex:1;min-width:220px;display:grid;gap:6px}
+.d-intro h3{font-size:24px}
+.d-intro p{color:var(--ink-soft)}
+.d-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+@media (max-width:820px){.d-grid{grid-template-columns:1fr}}
+.d-today{padding:clamp(22px,4vw,36px);display:grid;gap:14px;align-content:start;border-right:1px solid var(--paper-line)}
+@media (max-width:820px){.d-today{border-right:0;border-bottom:1px solid var(--paper-line)}}
+.d-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.d-day{font-family:var(--mono);font-size:13px;color:var(--ink-faint)}
+.d-streak{font-family:var(--hand);font-size:24px;color:var(--sanguine-deep);line-height:1}
+.d-chip{justify-self:start;font-family:var(--mono);font-size:12px;padding:3px 9px;border-radius:var(--radius);background:var(--paper);border:1px solid var(--paper-line);color:var(--indigo)}
+.d-task{font-size:clamp(23px,2.8vw,30px);line-height:1.15}
+.d-done{font-family:var(--hand);font-size:24px;color:var(--good)}
+.d-side{padding:clamp(22px,4vw,30px);display:grid;gap:18px;align-content:start}
+.d-cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;max-width:280px}
+.d-cal i{aspect-ratio:1;border-radius:2px;border:1px solid var(--paper-line);background:transparent;max-width:100%}
+.d-cal i.pre{border-color:transparent;background:var(--paper)}
+.d-cal i.on{background:var(--sanguine);border-color:var(--sanguine)}
+.d-cal i.now{outline:2px solid var(--ink);outline-offset:1px}
+.d-cap{font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+.d-bars{display:grid;gap:7px;max-width:320px}
+.d-bar{display:grid;grid-template-columns:120px minmax(0,1fr) 24px;gap:10px;align-items:center;font-size:13.5px;color:var(--ink-soft)}
+.d-bar b{height:6px;background:var(--paper);border-radius:3px;overflow:hidden;display:block}
+.d-bar b i{display:block;height:100%;background:var(--indigo)}
+.d-bar span:last-child{font-family:var(--mono);font-size:12px;text-align:right}
+.d-foot{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding:16px clamp(22px,4vw,36px);border-top:1px solid var(--paper-line)}
+.d-wins{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--ink-soft)}
+.d-win{font:inherit;font-size:13.5px;padding:6px 11px;border:1px solid var(--paper-line);background:var(--field);border-radius:var(--radius);cursor:pointer;color:var(--ink)}
+.d-win:hover{border-color:var(--ink)}
+.d-win b{font-family:var(--mono);font-weight:500;margin-left:6px;color:var(--sanguine-deep)}
+.d-link{font-size:14px;color:var(--sanguine-deep);text-decoration:none;border-bottom:1px solid var(--paper-line)}
+.d-link:hover{border-color:var(--sanguine)}
+.d-hired{padding:clamp(26px,4vw,44px);display:grid;gap:10px;justify-items:start}
+.d-hired .big{font-family:var(--hand);font-size:40px;color:var(--good);line-height:1}
+.d-hired h3{font-size:clamp(26px,3.2vw,34px)}
+.d-hired p{color:var(--ink-soft)}
+.d-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;gap:10px;align-items:end;width:100%}
+@media (max-width:640px){.d-form{grid-template-columns:1fr}}
+.d-form label{display:grid;gap:4px;font-size:13.5px;color:var(--ink-soft)}
+
+/* personal */
+.sp{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 22px;margin:4px 0 2px;align-items:baseline}
+.sp dt{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint)}
+.sp dd{margin:0;font-family:var(--serif);font-size:20px;font-weight:600;color:var(--ink)}
+.sp dd small{font-family:var(--sans);font-weight:400;font-size:14px;color:var(--ink-soft)}
+@media (max-width:520px){.sp{grid-template-columns:1fr;gap:2px}.sp dd{margin-bottom:10px}}
+.d-focus{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:14px clamp(22px,4vw,36px);border-bottom:1px solid var(--paper-line);font-size:14px;color:var(--ink-soft)}
+.d-focus .hand{font-family:var(--hand);font-size:21px;color:var(--sanguine-deep);margin-right:4px}
+.d-focus b{font-weight:500;color:var(--ink);background:var(--field);border:1px solid var(--paper-line);border-radius:var(--radius);padding:3px 9px;font-size:13.5px}
+.d-focus a{color:var(--sanguine-deep)}
+.d-next{display:grid;gap:6px}
+.d-next .cap{font-family:var(--hand);font-size:21px;color:var(--sanguine-deep)}
+.d-next ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--paper-line)}
+.d-next li{display:grid;grid-template-columns:86px minmax(0,1fr);gap:10px;padding-block:7px;border-bottom:1px solid var(--paper-line);font-size:14px;color:var(--ink-soft);align-items:baseline}
+.d-next li span{font-family:var(--mono);font-size:11.5px;color:var(--indigo)}
+details.rv-more{border-top:1px dashed var(--paper-line);padding-top:10px}
+details.rv-more summary{cursor:pointer;font-family:var(--hand);font-size:21px;color:var(--sanguine-deep)}
+details.rv-more > *+*{margin-top:12px}
+details.answers{border-top:1px dashed var(--paper-line);padding-top:10px;width:100%;max-width:680px}
+details.answers summary{cursor:pointer;font-family:var(--hand);font-size:21px;color:var(--sanguine-deep)}
+.ans{list-style:none;margin:8px 0 0;padding:0;border-top:1px solid var(--paper-line)}
+.ans li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;padding-block:9px;border-bottom:1px solid var(--paper-line);align-items:center}
+.ans b{font-size:14.5px;font-weight:600}
+.ans span{grid-column:1;font-size:13.5px;color:var(--ink-soft);overflow-wrap:anywhere}
+.ans button{grid-row:1/span 2;grid-column:2;font:inherit;font-size:14px;color:var(--sanguine-deep);background:var(--field);border:1px solid var(--paper-line);border-radius:var(--radius);padding:6px 14px;cursor:pointer}
+.ans button:hover{border-color:var(--sanguine)}
+.flow-top .count.editing{color:var(--sanguine-deep)}
+/* help */
+.help-fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:60;display:inline-flex;align-items:center;gap:8px;background:var(--sanguine);color:#FBF7EE;border:0;border-radius:999px;padding:13px 20px;font:inherit;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 24px rgba(32,28,23,.25)}
+.help-fab:hover{background:var(--sanguine-deep)}
+.help-fab svg{width:20px;height:20px}
+.help-panel{position:fixed;right:20px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:61;width:min(380px,calc(100vw - 40px));max-height:calc(100vh - 120px);overflow:auto;background:var(--card);border:1px solid var(--ink);border-radius:6px;box-shadow:0 20px 50px rgba(32,28,23,.28);padding:22px;display:grid;gap:12px}
+.help-panel h3{font-size:24px}
+.help-panel p{font-size:14.5px;color:var(--ink-soft)}
+.help-panel label{display:grid;gap:5px;font-size:14px;font-weight:500}
+.help-panel input,.help-panel textarea{width:100%;padding:10px 12px;border:1px solid var(--paper-line);border-radius:var(--radius);background:var(--field);font:inherit;font-size:15px;color:var(--ink)}
+.help-panel textarea{min-height:100px;resize:vertical}
+.help-panel input:focus,.help-panel textarea:focus{outline:1.5px solid var(--sanguine);border-color:var(--sanguine)}
+.help-close{position:absolute;top:10px;right:12px;background:none;border:0;font-size:24px;line-height:1;color:var(--ink-faint);cursor:pointer;padding:4px 8px}
+.help-or{font-size:13.5px;color:var(--ink-faint);border-top:1px dashed var(--paper-line);padding-top:10px}
+.help-msg{font-family:var(--hand);font-size:20px;min-height:1.2em}
+.help-msg.ok{color:var(--good)}.help-msg.bad{color:var(--sanguine)}
+@media (max-width:520px){.help-fab{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));padding:12px 16px}.help-panel{right:12px;left:12px;width:auto;bottom:calc(74px + env(safe-area-inset-bottom,0px))}}
+
+.as-who{margin-left:auto;margin-right:14px;background:none;border:0;padding:0;font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
+.as-who:hover{color:var(--sanguine-deep)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.fresh{background:none;border:0;padding:0;font:inherit;font-size:13.5px;color:var(--ink-soft);text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer;white-space:nowrap}
+.fresh:hover{color:var(--sanguine-deep)}
+.fresh-bar{background:var(--warn-bg);border-top:1px solid var(--paper-line)}
+.fresh-bar .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding-block:12px;font-size:14.5px;color:var(--ink)}
+.fresh-bar .btn{padding:8px 14px;font-size:14px}
+@media (max-width:560px){.nav-right{gap:10px}.fresh{font-size:12.5px}.fresh-who{display:none}.nav-cta{padding:8px 11px;font-size:13px}.wordmark{font-size:17px}}
+/* owner */
+.owner{background:var(--card);border:1px solid var(--ink);border-radius:var(--radius);padding:clamp(18px,3vw,28px);display:grid;gap:18px}
+.owner-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:flex-end}
+.owner-top h2{font-size:28px;margin-top:4px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{font:inherit;font-size:14.5px;font-weight:500;padding:8px 15px;border-radius:var(--radius);border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.tab .c{font-family:var(--mono);font-size:12.5px;margin-left:8px;opacity:.8}
+.tbl-wrap{overflow-x:auto}
+table.subs{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+table.subs th{text-align:left;font-family:var(--serif);font-style:italic;font-weight:500;font-size:14px;color:var(--sanguine-deep);padding:8px 10px;border-bottom:1px solid var(--ink)}
+table.subs td{padding:10px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+table.subs tr.row{cursor:pointer}
+table.subs tr.row:hover td{background:var(--paper)}
+table.subs td.when{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--ink-faint)}
+.detail td{background:var(--field)}
+.detail dl{display:grid;grid-template-columns:minmax(140px,.9fr) minmax(0,2fr);gap:6px 18px;margin:0}
+@media (max-width:620px){.detail dl{grid-template-columns:1fr}}
+.detail dt{color:var(--ink-faint);font-size:13.5px}
+.detail dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.empty{color:var(--ink-faint);padding-block:14px}
+
+/* facilitator + footer */
+.fac{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;align-items:center;border-top:1px solid var(--paper-line);padding-top:26px}
+.mono{width:72px;height:72px;border-radius:50%;background:#2E4A5E;color:var(--paper);display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:24px;border:1px solid var(--ink)}
+.fac p{color:var(--ink-soft);font-size:15px;max-width:70ch}
+.fac b{color:var(--ink);font-family:var(--serif);font-size:18px;font-weight:600}
+footer{border-top:1px solid var(--paper-line);padding-block:24px 30px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+footer p{color:var(--ink-faint);font-size:13.5px}
+footer .wordmark{color:var(--ink)}
+footer .wordmark .dot{color:var(--sanguine)}
+</style>
+</head>
+<body>
+
+
+<div class="page-panel" id="top">
+
+<header class="site">
+  <div class="wrap">
+    <nav>
+      <a class="wordmark" href="#top">Studio<span class="dot">·</span>to<span class="dot">·</span>Work</a>
+      <div class="nav-right"><button type="button" class="fresh" id="freshBtn" hidden>Start fresh</button><a class="nav-cta" href="#move1" id="navCta">Start move 1</a></div>
+    </nav>
+  </div>
+  <div class="fresh-bar" id="freshBar" hidden>
+    <div class="wrap">
+      <span>Clear the answers saved on this device and start as a new student? Anything already sent to Ravi stays with him.</span>
+      <span class="btn-row"><button type="button" class="btn" id="freshYes">Clear and start fresh</button><button type="button" class="btn quiet" id="freshNo">Cancel</button></span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Career prep for design students and early-career designers</p>
+      <h1>Nobody hires a degree. They hire <em>proof.</em></h1>
+      <p class="lede">One hour, face to face, on your own work. Three moves to get ready.</p>
+      <div class="btn-row"><a class="btn" href="#move1">Make move 1 now</a><span class="when">Open to all · one-hour session</span></div>
+      <span class="gains-title">you walk out with</span>
+      <ul class="gains">
+        <li><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 13 V36 H38 V16 H22 L18 11 H6 Z"/><path d="M15 26 L20 31 L29 21" style="stroke:var(--sanguine)"/></svg><span>A portfolio verdict</span></li>
+        <li><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6 H28 L34 12 V38 H12 Z M28 6 V12 H34 M17 19 H29 M17 25 H29 M17 31 H24"/></svg><span>Feedback on your case study</span></li>
+        <li><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10 H28 V24 H16 L10 29 V24 H6 Z"/><path d="M32 16 H38 V30 H34 V35 L28 30 H20" style="stroke:var(--sanguine)"/></svg><span>A practised project story</span></li>
+        <li><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11 H37 V37 H7 Z M7 18 H37 M14 7 V14 M30 7 V14 M13 25 H17 M20 25 H24 M13 31 H17 M20 31 H24"/><circle cx="29" cy="28" r="4.5" style="stroke:var(--sanguine)"/></svg><span>A 30-day job plan</span></li>
+      </ul>
+    </div>
+    <figure class="hero-art">
+      <svg viewBox="0 0 440 335" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line sketch of a drafting desk at the foot of a staircase that climbs to an open, lit doorway, with a student carrying a portfolio up the steps">
+        <path d="M318 62 H384 V168 H318 Z" style="fill:var(--sanguine);stroke:none;opacity:.16"/>
+        <path d="M318 168 L384 168 L300 300 L212 300 Z" style="fill:var(--sanguine);stroke:none;opacity:.10"/>
+        <path d="M12 300 H428"/>
+        <path d="M24 307 H128 M296 307 H420" stroke-width="1" opacity=".45"/>
+        <path d="M26 196 L158 172 L160 179 L28 203 Z"/>
+        <path d="M52 202 L40 300 M140 184 L152 300 M45 254 L147 238"/>
+        <path d="M60 182 L124 170 L128 180 L64 192 Z" stroke-width="1.2"/>
+        <path d="M70 184 L112 176 M73 188 L102 183" stroke-width="1" opacity=".55"/>
+        <path d="M132 170 L148 159" stroke-width="2.4" style="stroke:var(--sanguine)"/>
+        <path d="M156 176 L171 128 L150 100"/>
+        <path d="M150 100 L130 105 L139 123 Z"/>
+        <circle cx="171" cy="128" r="2.6" fill="currentColor"/>
+        <path d="M188 300 V276 H216 V252 H244 V228 H272 V204 H300 V168 H392"/>
+        <path d="M244 228 V300 M300 204 V300" stroke-width="1" opacity=".5"/>
+        <path d="M252 300 L296 256 M266 300 L298 268 M280 300 L298 282" stroke-width="1" opacity=".35"/>
+        <path d="M318 168 V62 H384 V168"/>
+        <path d="M384 62 L410 73 L410 179 L384 168"/>
+        <circle cx="404" cy="124" r="2.2" fill="currentColor"/>
+        <circle cx="258" cy="184" r="7.5"/>
+        <path d="M258 192 L256 212 M256 212 L249 228 M256 212 L276 204 M257 197 L247 208 M257 197 L270 192"/>
+        <path d="M239 205 L252 203 L254 221 L241 223 Z" style="stroke:var(--sanguine)"/>
+        <text class="anno" x="60" y="328">studio</text>
+        <text class="anno" x="332" y="50">work</text>
+        <path d="M128 322 C175 332 205 322 222 309" stroke-width="1.2" stroke-dasharray="3 5" style="stroke:var(--sanguine)"/>
+      </svg>
+    </figure>
+  </div>
+</section>
+
+<section id="moves">
+  <div class="wrap">
+    <div class="head">
+      <h2>Three moves. Nothing else.</h2>
+    </div>
+    <div class="moves">
+      <div class="move" id="m1">
+        <div class="move-top"><span class="n">1</span><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mi" aria-hidden="true"><path d="M11 9 H33 V39 H11 Z M17 6 H27 V12 H17 Z M16 31 H28"/><path d="M16 21 L20 25 L28 17" style="stroke:var(--sanguine)"/></svg><span class="status" id="s1">Not started</span></div>
+        <h3>Tell us where you stand</h3>
+        <p class="time">5 min</p>
+        <a class="btn" href="#move1">Start</a>
+      </div>
+      <div class="move" id="m2">
+        <div class="move-top"><span class="n">2</span><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mi" aria-hidden="true"><path d="M7 9 H29 V39 H7 Z M11 9 V39"/><path d="M23 31 L37 15 L40 18 L26 34 L22 35 Z" style="stroke:var(--sanguine)"/></svg><span class="status" id="s2">Not started</span></div>
+        <h3>Do the prep</h3>
+        <p class="time">About 2 hrs</p>
+        <a class="btn ghost" href="#move2">Start</a>
+      </div>
+      <div class="move" id="m3">
+        <div class="move-top"><span class="n">3</span><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mi" aria-hidden="true"><path d="M5 39 H40 M12 39 V7 H30 V39"/><path d="M30 7 L37 10 V41 L30 39" style="stroke:var(--sanguine)"/><circle cx="34" cy="24" r="1.3" fill="currentColor"/></svg><span class="status">After move 2</span></div>
+        <h3>Meet face to face</h3>
+        <p class="time">1 hour with Ravi</p>
+        <a class="btn ghost" href="#move3">How it works</a>
+      </div>
+    </div>
+    <p class="reassure">progress saves as you go</p>
+  </div>
+</section>
+
+<section id="move1" style="padding-top:8px">
+  <div class="wrap">
+    <div class="flow" id="flow-questionnaire"></div>
+  </div>
+</section>
+
+<section id="move2" style="padding-top:8px">
+  <div class="wrap">
+    <div class="flow" id="flow-activity"></div>
+  </div>
+</section>
+
+<section id="move3" style="padding-top:8px">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Move 3 · one hour, face to face</p>
+      <h2>Your one-hour session</h2>
+      <p>Once your prep is in, Ravi reads it and emails you to fix a time. Bring these three things:</p>
+    </div>
+    <div class="bring">
+      <div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11 H34 V29 H10 Z M5 34 H39 L35 29 H9 Z"/></svg><b>Your laptop</b></div>
+      <div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6 H28 L34 12 V38 H12 Z M28 6 V12 H34 M17 19 H29 M17 25 H29 M17 31 H24"/></svg><b>Resume &amp; portfolio</b></div>
+      <div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 13 V36 H38 V16 H22 L18 11 H6 Z M6 20 H38"/></svg><b>Your hero project</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="daily" style="padding-top:8px">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">After your session</p>
+      <h2>15 minutes a day, until you're hired.</h2>
+    </div>
+    <div class="daily" id="dailyCard"><div class="d-intro"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14 H56 V54 H8 Z M8 24 H56 M18 8 V18 M46 8 V18"/><path d="M15 32 H21 M27 32 H33 M39 32 H45 M15 40 H21 M27 40 H33" opacity=".6"/><path d="M38 42 L43 47 L52 36" style="stroke:var(--sanguine)" stroke-width="2.2"/></svg><div><h3>One small task a day</h3><p>On your portfolio, case study, resume, profile or outreach.</p></div></div></div>
+  </div>
+</section>
+
+<section id="responses" hidden style="padding-top:8px">
+  <div class="wrap">
+    <div class="owner">
+      <div class="owner-top">
+        <div><p class="eyebrow">Only you can see this</p><h2>Submissions</h2></div>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" aria-selected="true" data-kind="questionnaire">Move 1<span class="c" id="cq">0</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-kind="activity">Move 2<span class="c" id="ca">0</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-kind="daily">Daily<span class="c" id="cd">0</span></button>
+        </div>
+      </div>
+      <div class="tbl-wrap" id="subsTable"></div>
+      <div class="btn-row"><button class="btn ghost" type="button" id="copyCsv">Copy as CSV</button><span id="csvMsg" class="meta" aria-live="polite"></span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:8px">
+  <div class="wrap">
+    <div style="display:flex;flex-wrap:wrap;gap:30px;align-items:flex-start;border-top:1px solid var(--paper-line);padding-top:28px">
+      <img src="ravi-krishnan.png" alt="Ravi Krishnan, architect and designer" style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:1px solid var(--ink);background:var(--indigo);flex:none">
+      <div style="flex:1;min-width:260px">
+        <p class="eyebrow">Your facilitator</p>
+        <h2 style="font-size:28px;margin-top:6px">Ravi Krishnan</h2>
+        <p style="color:var(--sanguine-deep);font-family:var(--serif);font-style:italic;font-size:16px;margin-top:4px">Architect &amp; designer</p>
+        <p style="margin-top:12px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">33+ years in technology-led design, spanning enterprise software design, digital content and eLearning at IBM, Wipro and Suzlon.</p>
+        <p style="margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">An active member of Urban Sketchers Bengaluru, Ravi captures the city's built environment in a distinctive line-drawing style — and brings the same eye for detail to reviewing your work.</p>
+        <p style="margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">B.Arch, NIT Trichy · M.Des, IDC School of Design, IIT Bombay · Executive MBA, IIM Lucknow.</p>
+        <div style="margin-top:14px;display:flex;gap:20px;flex-wrap:wrap;font-size:14.5px">
+          <a href="mailto:lravikrishnan@gmail.com" style="text-decoration:none;border-bottom:1px solid var(--paper-line);padding-bottom:2px">lravikrishnan@gmail.com</a>
+          <a href="https://instagram.com/lravikrishnan" target="_blank" rel="noopener" style="text-decoration:none;border-bottom:1px solid var(--paper-line);padding-bottom:2px">@lravikrishnan on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="wordmark" href="#top">Studio<span class="dot">·</span>to<span class="dot">·</span>Work</a>
+    <p>Career prep for designers · <a href="#" id="helpFoot" style="color:var(--sanguine-deep)">Need help?</a></p>
+  </div>
+</footer>
+
+</div>
+
+<button type="button" class="help-fab" id="helpFab" aria-expanded="false" aria-controls="helpPanel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.6 9.5a2.5 2.5 0 0 1 4.8.9c0 1.6-2.4 2.1-2.4 3.4M12 16.6h.01"/></svg>Need help?</button>
+<form class="help-panel" id="helpPanel" hidden novalidate aria-labelledby="helpTitle">
+  <button type="button" class="help-close" id="helpClose" aria-label="Close">×</button>
+  <h3 id="helpTitle">Need help?</h3>
+  <p>Stuck on the site, the prep or anything about your session? Send Ravi a note here and he'll reply by email.</p>
+  <label for="help_name">Your name<input type="text" id="help_name" autocomplete="name"></label>
+  <label for="help_email">Your email<input type="email" id="help_email" autocomplete="email"></label>
+  <label for="help_msg">Your question<textarea id="help_msg" placeholder="What do you need help with?"></textarea></label>
+  <button type="submit" class="btn" id="helpSend">Send to Ravi</button>
+  <p class="help-msg" id="helpStatus" aria-live="polite"></p>
+  <p class="help-or">Prefer email? Write to <span class="addr">lravikrishnan@gmail.com</span></p>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+  const CONTACT="lravikrishnan@gmail.com";
+  /* Paste the Google Apps Script web app URL between the quotes (ends in /exec). */
+  const SHEET_URL="https://script.google.com/macros/s/AKfycbz8QqZ0saXKVPtW3dBIq-f5utSS7MmZXJP4IC0Z-NPNjQxiss3dBq5W5amX33iOCONx/exec";
+  const postForm=async(fields)=>{
+    if(!/^https:\/\/script\.google\.com\/.+\/exec$/.test(SHEET_URL))return false;
+    try{const body=new URLSearchParams();for(const[k,v]of Object.entries(fields))body.append(k,Array.isArray(v)?v.join("; "):(v==null?"":String(v)));
+      await fetch(SHEET_URL,{method:"POST",mode:"no-cors",body});return true;}catch(e){return false;}
+  };
+  const $=(s,r=document)=>r.querySelector(s);
+  const el=(tag,attrs={},kids=[])=>{const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(k==="text")e.textContent=v;else if(v!==false&&v!=null)e.setAttribute(k,v===true?"":v);}for(const k of[].concat(kids))if(k)e.append(k);return e;};
+  const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+  const FLOWS={
+    questionnaire:{title:"Studio to Work questionnaire",label:"Tell us where you stand",move:1,next:"#move2",nextLabel:"Go to move 2",steps:[
+      {h:"First, who are you?",f:[{k:"name",t:"text",l:"Your name",req:1,ac:"name"},{k:"email",t:"email",l:"Email",req:1,ac:"email"}]},
+      {h:"Where are you right now?",f:[{k:"level",t:"radio",l:"Programme",req:1,o:["UG student","PG student","Recent graduate","Working designer","Career switcher","Other"]},{k:"discipline",t:"radio",l:"Discipline",req:1,o:["Communication / Graphic","UX / UI / Interaction","Product / Industrial","Fashion / Textile","Interior / Spatial","Animation / Motion / Film","Other"]}]},
+      {h:"What role do you want?",p:"Up to three.",f:[{k:"roles",t:"check",max:3,req:1,l:"Roles you want",hide:1,o:["Visual / brand designer","UX / UI designer","Product / industrial designer","Service designer","UX researcher","Design strategist","Motion / animation","Fashion / textile designer","Spatial / exhibition designer","UX writer","Design educator","Freelancer","My own studio or brand","Not sure yet"]}]},
+      {h:"How ready are you, honestly?",p:"Hover a number to see what it means.",f:[{k:"r_role",t:"scale",l:"I know which role I want",req:1,tips:["No idea yet","A few vague options","Narrowed to two or three roles","One role, still exploring where","One clear role and target companies"]},{k:"r_portfolio",t:"scale",l:"My portfolio would get me shortlisted",req:1,tips:["No portfolio yet","Old work, not organised","Online, but mostly final visuals","Case studies, needs polish","Ready to send today"]},{k:"r_interview",t:"scale",l:"I could handle a design interview",req:1,tips:["Never practised one","Unsure what they'd even ask","Could walk through a project, roughly","Practised a few times","Confident, even with tough questions"]}]},
+      {h:"What's your biggest worry about getting hired?",p:"A line or two.",f:[{k:"worry",t:"area",l:"Your biggest worry",req:1,hide:1}]},
+      {h:"What should your hour focus on?",p:"Pick one.",f:[{k:"session",t:"radio",l:"Focus for the session",req:1,hide:1,o:["Portfolio review","Case study feedback","Interview practice","Choosing a direction","Job search and outreach","Offers and salary"]}]},
+      {h:"Last one: what would you ask a hiring manager?",p:"Optional.",f:[{k:"question",t:"area",l:"Your question"},{k:"portfolio_link",t:"url",l:"Portfolio link, if you have one"}]}
+    ]},
+    activity:{title:"Studio to Work prep",label:"Do the prep",move:2,next:"#move3",nextLabel:"See how the session works",steps:[
+      {h:"Who's submitting?",p:"Use the same email as move 1.",f:[{k:"name",t:"text",l:"Your name",req:1,ac:"name"},{k:"email",t:"email",l:"Email",req:1,ac:"email"}]},
+      {time:"Task 1 · 45 minutes",h:"Find three places you'd want to work",p:"One obvious, one unexpected industry, one small studio.",stuck:1,f:[{k:"t1_obvious",t:"text",l:"The obvious one",req:1,ph:"Organisation · role · skill you lack"},{k:"t1_unexpected",t:"text",l:"The unexpected industry",req:1,ph:"Organisation · role · skill you lack"},{k:"t1_small",t:"text",l:"The small studio or startup",req:1,ph:"Organisation · role · skill you lack"}]},
+      {time:"Task 2 · 45 minutes",h:"Pick your hero project",p:"The one that shows you best. 150 words.",guide:"t2_summary",f:[{k:"t2_title",t:"text",l:"Project title",req:1,ph:"What you designed, for whom, in what context",titleTip:1},{k:"t2_summary",t:"area",l:"Summary in 150 words",req:1,wc:150,tall:1,review:1},{k:"t2_link",t:"url",l:"Link to the project files"}]},
+      {time:"Task 3 · 30 minutes",h:"Find one designer to learn from",p:"Someone doing the job you want. Draft a short note to them.",guide:"t3_msg",f:[{k:"t3_designer",t:"text",l:"Their name and profile link",req:1},{k:"t3_msg",t:"area",l:"Your draft message",req:1,wc:100,review:1}]},
+      {h:"Last step: your links",p:"Unfinished is fine.",f:[{k:"resume",t:"url",l:"Resume link"},{k:"portfolio",t:"url",l:"Portfolio link"}]}
+    ]}
+  };
+  const labelsOf=kind=>{const L={};FLOWS[kind].steps.forEach(s=>s.f.forEach(f=>L[f.k]=f.l));return L;};
+  const LABELS={questionnaire:labelsOf("questionnaire"),activity:labelsOf("activity")};
+
+  /* platform storage */
+  let DB=null,USER=null,ME=null,SAMPLE=null,DL=null;
+  const ready=(async()=>{try{if(!window.claude||typeof window.claude.use!=="function")return;const[db,user,smp,dl]=await Promise.all([window.claude.use("db"),window.claude.use("user"),window.claude.use("sample"),window.claude.use("downloads")]);DB=db;USER=user;SAMPLE=smp;DL=dl;if(USER)ME=await USER.id();}catch(e){DB=null;}})();
+  const fmt=iso=>{try{return new Date(iso).toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}catch(e){return iso}};
+
+  function setStatus(move,done){
+    const m=$("#m"+move),s=$("#s"+move); if(!m)return;
+    m.classList.toggle("done",done); s.textContent=done?"Done ✓":"Not started"; const mb=m.querySelector(".btn"); if(mb)mb.textContent=done?"View":"Start";
+    const d1=$("#m1").classList.contains("done"),d2=$("#m2").classList.contains("done");
+    const cta=$("#navCta");
+    if(!d1){cta.textContent="Start move 1";cta.href="#move1";}
+    else if(!d2){cta.textContent="Start move 2";cta.href="#move2";}
+    else{cta.textContent="Today's 15 minutes";cta.href="#daily";}
+  }
+
+  function makeFlow(kind){
+    const F=FLOWS[kind],root=$("#flow-"+kind),DRAFT="stws-"+kind,DONE="stws-done-"+kind;
+    const SENT="stws-sent-"+kind;
+    let data=store.get(DRAFT)||{},idx=0,editing=false;
+    if(kind==="activity"){const q=store.get("stws-questionnaire")||{};for(const k of["name","email"])if(!data[k]&&q[k])data[k]=q[k];}
+    const qInfo=()=>{const q=store.get("stws-questionnaire")||{};return q.name&&q.email?q:null;};
+    let showId=!(kind==="activity"&&qInfo());
+    const STEPS=()=>showId?F.steps:F.steps.slice(1);
+    const syncId=()=>{if(kind==="activity"&&!showId){const q=qInfo();if(q){data.name=q.name;data.email=q.email;}else showId=true;}};
+
+    function readStep(){
+      STEPS()[idx].f.forEach(f=>{
+        if(f.t==="radio"||f.t==="scale"){const c=root.querySelector(`input[name="${f.k}"]:checked`);data[f.k]=c?c.value:"";}
+        else if(f.t==="check"){data[f.k]=[...root.querySelectorAll(`input[name="${f.k}"]:checked`)].map(i=>i.value);}
+        else{const i=root.querySelector(`[name="${f.k}"]`);data[f.k]=i?i.value.trim():"";}
+      });
+      store.set(DRAFT,data);
+    }
+    function invalidAll(){
+      for(let i=0;i<STEPS().length;i++)for(const f of STEPS()[i].f){const v=data[f.k];if(f.req&&(!v||(Array.isArray(v)&&!v.length)))return{i,f};if(f.t==="email"&&v&&!/^\S+@\S+\.\S+$/.test(v))return{i,f};}
+      return null;
+    }
+    function invalid(){
+      for(const f of STEPS()[idx].f){
+        const v=data[f.k];
+        if(f.req&&(!v||(Array.isArray(v)&&!v.length)))return f;
+        if(f.t==="email"&&v&&!/^\S+@\S+\.\S+$/.test(v))return f;
+      }
+      return null;
+    }
+
+    function field(f){
+      const q=el("div",{class:f.t==="scale"?"scale-row":"q"}),id=kind+"_"+f.k;
+      const lab=forId=>{const L=el(forId?"label":"div",{class:(forId?"":"ql")+(f.hide?" sr":"")||null,for:forId||null});L.append(f.l);if(f.hint)L.append(el("span",{class:"hint",text:" · "+f.hint}));return L;};
+      const v=data[f.k];
+      if(["text","email","url"].includes(f.t)){const i=el("input",{type:f.t,id,name:f.k,autocomplete:f.ac||null,placeholder:f.ph||(f.t==="url"?"https://":null)});i.value=v||"";q.append(lab(id),i);
+        if(f.titleTip){
+          const chk=el("p",{class:"title-check","aria-live":"polite"});
+          const upd=()=>{const n=(i.value.trim().match(/\S+/g)||[]).length;chk.className="title-check";
+            if(!n)chk.textContent="";
+            else if(n<5){chk.classList.add("warn");chk.textContent=`${n} word${n>1?"s":""}: too short. Add who it's for and where.`;}
+            else if(n>14){chk.classList.add("warn");chk.textContent=`${n} words: a little long. Trim to what, who and where.`;}
+            else{chk.classList.add("ok");chk.textContent=`${n} words: good length. Check it says what, for whom and where.`;}};
+          i.addEventListener("input",upd);upd();
+          const formula=el("p",{class:"formula"});formula.append("6–12 words: ",el("span",{class:"blank",text:"what"})," for ",el("span",{class:"blank",text:"whom"})," in ",el("span",{class:"blank",text:"what context"}));
+          q.append(chk,el("div",{class:"title-tip"},[formula,el("p",{class:"meta",text:"e.g. Colour-coded wayfinding for first-time patients at a district hospital"})]));
+        }}
+      else if(f.t==="area"){const a=el("textarea",{id,name:f.k,style:f.tall?"min-height:170px":null});a.value=v||"";q.append(lab(id),a);
+        if(f.wc){const w=el("div",{class:"wc"});const upd=()=>{const n=(a.value.trim().match(/\S+/g)||[]).length;w.textContent=`${n} / ${f.wc} words`;w.classList.toggle("over",n>f.wc);};a.addEventListener("input",upd);upd();q.append(w);}
+        if(f.review){
+          const rbtn=el("button",{type:"button",class:"btn ghost",text:WRITEUPS[f.k].btn,style:"justify-self:start;padding:9px 16px;font-size:14.5px"});
+          const panel=el("div",{class:"review",hidden:true,"aria-live":"polite"});
+          rbtn.addEventListener("click",()=>runReview(f.k,a,panel,rbtn));
+          const pbtn=el("button",{type:"button",class:"btn quiet",text:"Download as PDF ↓",style:"padding:9px 10px;font-size:14.5px"});
+          const pmsg=el("span",{class:"meta","aria-live":"polite"});
+          pbtn.addEventListener("click",()=>downloadWriteup(f.k,pbtn,pmsg));
+          q.append(el("div",{class:"btn-row"},[rbtn,pbtn,pmsg]),panel);
+        }}
+      else if(f.t==="radio"||f.t==="check"){const box=el("div",{class:"opts",role:f.t==="radio"?"radiogroup":"group","aria-label":f.l});
+        f.o.forEach((o,ix)=>{const iid=id+"_"+ix;const inp=el("input",{type:f.t==="radio"?"radio":"checkbox",id:iid,name:f.k,value:o});inp.checked=f.t==="radio"?v===o:Array.isArray(v)&&v.includes(o);box.append(el("label",{class:"opt",for:iid},[inp,el("span",{text:o})]));});
+        if(f.max)box.addEventListener("change",e=>{if(box.querySelectorAll("input:checked").length>f.max){e.target.checked=false;root.querySelector(".err").textContent=`only ${f.max}, untick one to swap`;}});
+        q.append(lab(),box);}
+      else if(f.t==="scale"){const box=el("div",{class:"scale",role:"radiogroup","aria-label":f.l});
+        [1,2,3,4,5].forEach(n=>{const iid=id+"_"+n;const tip=f.tips?f.tips[n-1]:null;const inp=el("input",{type:"radio",id:iid,name:f.k,value:String(n),"aria-label":tip?`${n}: ${tip}`:null});inp.checked=v===String(n);box.append(el("label",{class:"opt",for:iid,"data-tip":tip},[inp,el("span",{text:String(n)})]));});
+        const cap=el("div",{class:"tip-cap","aria-live":"polite"});
+        const picked=()=>{const c=box.querySelector("input:checked");return c?c.value:"";};
+        const show=(n,hover)=>{if(!f.tips)return;if(n){cap.classList.remove("idle");cap.textContent=hover?`${n} means: ${f.tips[n-1].toLowerCase()}`:`you picked ${n}: ${f.tips[n-1].toLowerCase()}`;}else{cap.classList.add("idle");cap.textContent="↑ hover over a number to see what it means";}};
+        box.addEventListener("mouseover",e=>{const o=e.target.closest(".opt");if(o){const i=o.querySelector("input");show(i.value,true);}});
+        box.addEventListener("mouseleave",()=>show(picked()));
+        box.addEventListener("change",e=>show(e.target.value));show(v||"");
+        q.append(lab(),box,cap);}
+      return q;
+    }
+
+    const wordsOf=t=>(t.trim().match(/\S+/g)||[]).length;
+    const markAll=(t,re,note,marks)=>{let m,c=0;re.lastIndex=0;while((m=re.exec(t))){c++;marks.push({s:m.index,e:m.index+m[0].length,cls:"local",note});}return c;};
+    const SUMMARY_FLUFF=["innovative","unique","user-friendly","seamless","intuitive","holistic","aesthetic","aesthetically","amazing","very","really","beautiful","modern","engaging","immersive","various","basically","cutting-edge"];
+    const WRITEUPS={
+      t2_summary:{
+        noun:"summary",btn:"Review my summary",pdfLabel:"HERO PROJECT SUMMARY",file:"Hero project summary",
+        heading:()=>data.t2_title||"Untitled project",footer:()=>data.t2_link?"Project files: "+data.t2_link:"",
+        partsHeading:"The five parts",extraLabel:"On your title: ",
+        local(t){
+          const marks=[],checks=[],n=wordsOf(t);
+          checks.push(n<60?{ok:false,text:`Only ${n} words. Some of the five parts are probably missing.`}:n>150?{ok:false,text:`${n} words. Trim to 150 or fewer.`}:{ok:true,text:`${n} words, within the limit.`});
+          const we=markAll(t,/\b(we|our|us)\b/gi,"Say “I” for the parts you did yourself.",marks);
+          checks.push(we?{ok:false,text:`“We” or “our” appears ${we}×. Make your own role clear.`}:{ok:true,text:"Written in your own voice."});
+          checks.push(/\d/.test(t)?{ok:true,text:"Has at least one real number."}:{ok:false,text:"No numbers. One real figure (people, weeks, minutes) makes it credible."});
+          const fc=markAll(t,new RegExp("\\b("+SUMMARY_FLUFF.join("|")+")\\b","gi"),"Vague word. Show it with evidence instead.",marks);
+          checks.push(fc?{ok:false,text:`${fc} vague word${fc>1?"s":""} marked. Replace them with evidence.`}:{ok:true,text:"No vague filler words."});
+          return{marks,checks};
+        },
+        prompt:t=>`You are a demanding but kind design mentor reviewing a design student's or early-career designer's portfolio project summary (target: 150 words) against this guideline.
+
+Guideline, five parts in order:
+1. The problem (~30 words): who was struggling, with what, and why it mattered.
+2. Your role (~20 words): what the student did themselves, solo or in a team, over how long.
+3. The insight (~30 words): what their research showed that changed their direction.
+4. The key decision (~40 words): the one choice they made, what they rejected, and why.
+5. The outcome (~30 words): what happened, with evidence (a test, feedback or a number), plus what they'd do next.
+Style rules: write "I", not "we"; one real number beats three adjectives; cut the backstory.
+
+Originality matters: do NOT rewrite the summary and do NOT supply replacement sentences. Point to what should change and give a direction or a question that helps the student fix it in their own words.
+
+Project title: ${data.t2_title||"(none given)"}
+Summary:
+"""
+${t}
+"""
+
+Reply with only a JSON object in exactly this shape:
+{"overall":"one-sentence verdict","strength":"one specific thing that already works","parts":[{"part":"The problem","status":"strong|weak|missing","note":"max 20 words"},{"part":"Your role",...},{"part":"The insight",...},{"part":"The key decision",...},{"part":"The outcome",...}],"highlights":[{"quote":"2-15 words copied EXACTLY from the summary","issue":"what is wrong, max 15 words","fix":"a direction or question, max 20 words"}],"extra":"one-line note on whether the title shows scope and context, or empty string"}
+Give up to 5 highlights, most important first. Every quote must appear verbatim in the summary.`
+      },
+      t3_msg:{
+        noun:"message",btn:"Review my message",pdfLabel:"DRAFT MESSAGE TO A DESIGNER",file:"Draft message to a designer",
+        heading:()=>data.t3_designer?"To: "+data.t3_designer:"Draft message to a designer",footer:()=>"",
+        partsHeading:"The four parts",extraLabel:"On tone: ",
+        local(t){
+          const marks=[],checks=[],n=wordsOf(t);
+          checks.push(n<30?{ok:false,text:`Only ${n} words. The hook or the ask is probably missing.`}:n>100?{ok:false,text:`${n} words. Busy people skim. Trim to under 100.`}:{ok:true,text:`${n} words, short enough to be read.`});
+          checks.push(/^\s*(hi|hello|dear|hey)\s+[A-Z]/i.test(t)?{ok:true,text:"Opens with their name."}:{ok:false,text:"Open with their first name, not “Sir/Madam” or nothing."});
+          const fl=markAll(t,/\b(love your work|big fan|huge fan|amazing work|awesome work|great work|so inspiring|very inspiring|inspire me)\b/gi,"Generic praise. Name one specific thing you noticed instead.",marks);
+          checks.push(fl?{ok:false,text:"Generic praise marked. Replace it with something specific from their work."}:{ok:true,text:"No generic flattery."});
+          const job=markAll(t,/\b(job|jobs|internship|internships|opening|openings|vacancy|vacancies|refer me|referral|hire me)\b/gi,"Asking for a job up front puts people off. Ask for advice instead.",marks);
+          checks.push(job?{ok:false,text:"Mentions a job or referral. Keep the first message to one small question."}:{ok:true,text:"No job ask in the first message."});
+          const qs=(t.match(/\?/g)||[]).length;
+          checks.push(qs===0?{ok:false,text:"No question mark. Make your one ask a clear question."}:qs>1?{ok:false,text:`${qs} questions. Keep it to one.`}:{ok:true,text:"One clear question."});
+          return{marks,checks};
+        },
+        prompt:t=>`You are a demanding but kind design mentor reviewing a design student's or early-career designer's first message to a working designer they admire (target: under 100 words) against this guideline.
+
+Guideline, four parts in order:
+1. A specific hook (~25 words): one precise thing the student noticed in the designer's work. Generic praise like "I love your work" fails.
+2. Who you are (~15 words): one line on their discipline and the role they're aiming for.
+3. One small ask (~25 words): a single question the designer can answer in two minutes. Never a job or referral request.
+4. Make it easy (~15 words): say a short reply is enough, it's fine if they're busy, and thank them.
+Style rules: under 100 words; one ask only; a portfolio link is fine, an attachment is not; respectful but not grovelling.
+
+Originality matters: do NOT rewrite the message and do NOT supply replacement sentences. Point to what should change and give a direction or a question that helps the student fix it in their own words.
+
+Who it's to: ${data.t3_designer||"(not given)"}
+Message:
+"""
+${t}
+"""
+
+Reply with only a JSON object in exactly this shape:
+{"overall":"one-sentence verdict","strength":"one specific thing that already works","parts":[{"part":"A specific hook","status":"strong|weak|missing","note":"max 20 words"},{"part":"Who you are",...},{"part":"One small ask",...},{"part":"Make it easy",...}],"highlights":[{"quote":"2-15 words copied EXACTLY from the message","issue":"what is wrong, max 15 words","fix":"a direction or question, max 20 words"}],"extra":"one-line note on the tone: too formal, too casual, or right"}
+Give up to 5 highlights, most important first. Every quote must appear verbatim in the message.`
+      }
+    };
+    function annotate(t,marks){
+      const out=el("p",{class:"annot"});let pos=0;
+      marks.slice().sort((a,b)=>a.s-b.s||(a.cls==="ai"?-1:1)).forEach(mk=>{if(mk.s<pos)return;out.append(t.slice(pos,mk.s));const sp=el("mark",{class:mk.cls,"data-note":mk.note,tabindex:"0"},[t.slice(mk.s,mk.e)]);if(mk.n)sp.append(el("sup",{text:String(mk.n)}));out.append(sp);pos=mk.e;});
+      out.append(t.slice(pos));return out;
+    }
+    function renderReview(cfg,panel,t,r,loc,note){
+      panel.replaceChildren();
+      const marks=[...loc.marks],items=[];
+      if(r&&Array.isArray(r.highlights))r.highlights.slice(0,5).forEach(h=>{const qt=String(h&&h.quote||"").trim();if(!qt)return;let s=t.indexOf(qt);if(s<0)s=t.toLowerCase().indexOf(qt.toLowerCase());const n=items.length+1;const issue=String(h.issue||""),fix=String(h.fix||"");items.push({n,qt,issue,fix});if(s>=0)marks.push({s,e:s+qt.length,cls:"ai",n,note:issue+(fix?" → "+fix:"")});});
+      panel.append(el("div",{},[el("span",{class:"rv-title",text:"your review"}),r&&r.overall?el("p",{class:"rv-overall",text:String(r.overall)}):null]));
+      if(note)panel.append(el("p",{class:"rv-note",text:note}));
+      panel.append(annotate(t,marks));
+      if(r&&r.strength)panel.append(el("p",{class:"rv-strength"},[el("b",{text:"What works: "}),document.createTextNode(String(r.strength))]));
+      const itemList=(arr)=>{const ol=el("ol",{class:"rv-items"});arr.forEach(it=>ol.append(el("li",{},[el("span",{class:"num",text:String(it.n)}),el("div",{},[el("q",{text:it.qt}),el("p",{text:it.issue}),it.fix?el("p",{class:"fix",text:"Try: "+it.fix}):null])])));return ol;};
+      const checks=()=>{const cl=el("ul",{class:"rv-checks"});loc.checks.slice().sort((a,b)=>a.ok-b.ok).forEach(c=>cl.append(el("li",{class:c.ok?"ok":"no",text:c.text})));return cl;};
+      if(items.length){
+        panel.append(el("h4",{class:"rv-h",text:"Fix these first"}),itemList(items.slice(0,3)));
+        const more=el("details",{class:"rv-more"},[el("summary",{text:"see the full review"})]);
+        if(r&&Array.isArray(r.parts)&&r.parts.length){const ul=el("ul",{class:"rv-parts"});r.parts.slice(0,5).forEach(p=>{const st=["strong","weak","missing"].includes(p&&p.status)?p.status:"weak";ul.append(el("li",{},[el("span",{class:"chip "+st,text:{strong:"✓ strong",weak:"~ weak",missing:"✗ missing"}[st]}),el("b",{text:String(p.part||"")}),el("span",{class:"pn",text:String(p.note||"")})]));});more.append(el("h4",{class:"rv-h",text:cfg.partsHeading}),ul);}
+        if(items.length>3)more.append(el("h4",{class:"rv-h",text:"Also worth fixing"}),itemList(items.slice(3)));
+        const extra=r&&(r.extra||r.title);if(extra)more.append(el("p",{class:"rv-strength"},[el("b",{text:cfg.extraLabel}),document.createTextNode(String(extra))]));
+        more.append(el("h4",{class:"rv-h",text:"Quick checks"}),checks());
+        panel.append(more);
+      }else{
+        panel.append(el("h4",{class:"rv-h",text:"Fix these first"}),checks());
+      }
+      panel.append(el("p",{class:"caution"},[el("b",{text:"A nudge, not a rewrite. "}),document.createTextNode("Make the changes in your own words, then review again.")]));
+    }
+    async function runReview(key,ta,panel,btn){
+      const cfg=WRITEUPS[key];readStep();
+      const t=ta.value.trim();panel.hidden=false;panel.replaceChildren();
+      if(wordsOf(t)<15){panel.append(el("p",{class:"rv-note",text:`Write at least a few sentences of your ${cfg.noun} first, then review.`}));return;}
+      const loc=cfg.local(t);
+      await ready;
+      if(!SAMPLE){renderReview(cfg,panel,t,null,loc,"");return;}
+      btn.disabled=true;const ctl=new AbortController();
+      const stop=el("button",{type:"button",class:"btn quiet",text:"Stop"});stop.addEventListener("click",()=>ctl.abort());
+      panel.append(el("div",{class:"rv-wait"},[el("span",{text:"reading it against the guideline… this can take up to a minute"}),stop]));
+      try{const r=await SAMPLE.json(cfg.prompt(t),{signal:ctl.signal});renderReview(cfg,panel,t,r&&typeof r==="object"?r:null,loc);}
+      catch(e){const msg={cancelled:"Review stopped. Here are the quick checks.",rate_limited:"Too many reviews just now. Here are the quick checks; try the full review again in a few minutes.",not_granted:"The detailed review wasn't allowed, so these are the quick checks.",sampling_disabled:"The detailed review isn't available for this account, so these are the quick checks.",invalid_json:"The detailed review came back garbled. Here are the quick checks; try again."}[e&&e.code]||"The detailed review didn't come through. Here are the quick checks; try again in a moment.";renderReview(cfg,panel,t,null,loc,msg);}
+      finally{btn.disabled=false;btn.textContent="Review again";}
+    }
+    const pdfText=s=>String(s||"").replace(/[“”]/g,'"').replace(/[‘’]/g,"'").replace(/[–—]/g,"-").replace(/…/g,"...").replace(/·/g,"-").replace(/[^\x00-\xFF]/g,"");
+    async function downloadWriteup(key,btn,msg){
+      const cfg=WRITEUPS[key];readStep();msg.textContent="";
+      const t=(data[key]||"").trim();
+      if(!t){msg.textContent=`Write your ${cfg.noun} first.`;return;}
+      await ready;
+      if(!window.jspdf||!window.jspdf.jsPDF){msg.textContent="The PDF maker didn't load. Reload the page and try again.";return;}
+      btn.disabled=true;
+      try{
+        const doc=new window.jspdf.jsPDF({unit:"mm",format:"a4"});
+        const W=210,M=22,TW=W-2*M;let y=22;
+        doc.setDrawColor(168,64,44);doc.setLineWidth(0.8);doc.line(M,y,W-M,y);y+=8;
+        doc.setFont("helvetica","bold");doc.setFontSize(8.5);doc.setTextColor(126,46,31);doc.text(cfg.pdfLabel,M,y);
+        doc.setFont("helvetica","normal");doc.setTextColor(122,114,98);doc.text("Studio to Work",W-M,y,{align:"right"});y+=10;
+        doc.setFont("times","bold");doc.setFontSize(20);doc.setTextColor(32,28,23);
+        const tl=doc.splitTextToSize(pdfText(cfg.heading()),TW);doc.text(tl,M,y);y+=tl.length*8+2;
+        doc.setFont("helvetica","normal");doc.setFontSize(10);doc.setTextColor(86,80,69);
+        const date=new Date().toLocaleDateString(undefined,{day:"numeric",month:"long",year:"numeric"});
+        doc.text(pdfText([data.name,data.email,date].filter(Boolean).join("   |   ")),M,y);y+=6;
+        doc.setDrawColor(201,192,168);doc.setLineWidth(0.3);doc.line(M,y,W-M,y);y+=10;
+        doc.setFont("times","normal");doc.setFontSize(12.5);doc.setTextColor(32,28,23);
+        pdfText(t).split(/\n\s*\n/).forEach(p=>{doc.splitTextToSize(p.replace(/\s*\n\s*/g," "),TW).forEach(l=>{if(y>270){doc.addPage();y=22;}doc.text(l,M,y);y+=6.6;});y+=3;});
+        y+=4;doc.setDrawColor(201,192,168);doc.line(M,y,W-M,y);y+=6;
+        doc.setFont("helvetica","normal");doc.setFontSize(9);doc.setTextColor(122,114,98);
+        doc.text(`${wordsOf(t)} words`,M,y);
+        const foot=cfg.footer();if(foot){y+=5;doc.text(doc.splitTextToSize(pdfText(foot),TW),M,y);}
+        const safe=pdfText(data.name||"").replace(/[^\w\- ]/g,"").trim();
+        const fname=`${cfg.file}${safe?" - "+safe:""}.pdf`;if(DL)await DL.save({filename:fname,data:doc.output("blob")});else doc.save(fname);
+        msg.textContent="PDF saved.";
+      }catch(e){msg.textContent=e&&e.code==="declined"?"":"Couldn't save the PDF. Try again.";}
+      finally{btn.disabled=false;}
+    }
+
+    const GUIDES={
+      t2_summary:{summary:"need help? what to cover · template · sample",
+        parts:[["The problem","~30 words","Who was struggling, with what, and why it mattered."],["Your role","~20 words","What you did yourself, solo or in a team, over how long."],["The insight","~30 words","What your research showed that changed your direction."],["The key decision","~40 words","The one choice you made, what you rejected, and why."],["The outcome","~30 words","What happened, with evidence: a test, feedback or a number. Add what you'd do next."]],
+        tip:"write “I”, not “we” · one real number beats three adjectives · cut the backstory",
+        tplNote:"Fill in the blanks, then cut what doesn't earn its place.",
+        tpl:"[Who] struggled to [problem] because [cause]. As [your role] on a [solo / team of N] project over [duration], I [what you did]. [Research method] with [how many people] showed that [key insight]. So I chose to [key decision] instead of [what you rejected], because [reason]. The result: [outcome and evidence]. Next, I would [what you'd improve].",
+        sampleTitle:"Wayfinding for first-time patients at a district hospital",
+        sample:[["First-time patients at a 400-bed district hospital spent about 20 minutes finding the right department, and many missed their slot.","problem"],[" For my M.Des thesis I worked solo over 16 weeks, leading research, concept and prototyping.","role"],[" Shadowing 30 patients showed that most could not read the English-only signs, but nearly all recognised colours and simple icons.","insight"],[" So I dropped the planned wayfinding app and designed colour-coded floor lines with icon signs in three languages, because it needed no phone and no literacy.","decision"],[" A two-week pilot on one floor cut average finding time to about 7 minutes, and the hospital asked to extend it to two more floors. Next, I would test it with visually impaired patients, whom the colour lines do not yet serve.","outcome"]]},
+      t3_msg:{summary:"need help? what to cover · template · sample",
+        parts:[["A specific hook","~25 words","One precise thing you noticed in their work. “I love your work” gets ignored."],["Who you are","~15 words","One line: who you are now, your discipline, the role you're aiming for."],["One small ask","~25 words","A single question they can answer in two minutes. Never “can you get me a job?”"],["Make it easy","~15 words","Say a short reply is enough and it's fine if they're busy. Thank them."]],
+        tip:"under 100 words · one ask, not three · a portfolio link is fine, an attachment isn't · follow up once, after a week",
+        tplNote:"Fill in the blanks. The hook and the question matter most.",
+        tpl:"Hi [first name], I've been studying your work on [specific project], especially how you [specific decision you noticed]. I'm a [discipline] [student / designer] at [college or company], aiming for a role in [target role]. Could I ask one question: [your one specific question]? A two-line reply would help a lot, and no worries if you're busy. Thank you, [your name] · [portfolio link]",
+        sampleTitle:"To a product designer at a fintech company",
+        sample:[["Hi Meera, I've been studying your case study on the loan application redesign, especially how you cut the form from nine screens to four by asking for documents later.","hook"],[" I'm a final-year M.Des interaction design student, aiming for a product design role in fintech.","who"],[" Could I ask one question: when you hire juniors, what does a strong case study show that most students miss?","ask"],[" A two-line reply would help a lot, and no worries if you're busy. Thank you, Arjun","easy"]]}
+    };
+    function guideEl(key){
+      const G=GUIDES[key];
+      const box=el("details",{class:"guide"});
+      box.append(el("summary",{text:G.summary}));
+      const tabs=el("div",{class:"gtabs",role:"tablist"}),panes=el("div");
+      const add=(label,content)=>{const b=el("button",{type:"button",class:"gtab",role:"tab","aria-selected":"false",text:label});const p=el("div",{class:"gpane",role:"tabpanel",hidden:true},content);
+        b.addEventListener("click",()=>{tabs.querySelectorAll(".gtab").forEach(x=>x.setAttribute("aria-selected",String(x===b)));panes.querySelectorAll(".gpane").forEach(x=>x.hidden=x!==p);});tabs.append(b);panes.append(p);return b;};
+      const ol=el("ol");G.parts.forEach(([t,w,d])=>ol.append(el("li",{},[el("b",{text:t}),el("span",{class:"budget",text:w}),el("p",{text:d})])));
+      const first=add("What to cover",[ol,el("p",{class:"gtip",text:G.tip})]);
+      const TPL=G.tpl;
+      const tpl=el("p",{class:"tpl"});TPL.split(/(\[[^\]]+\])/).forEach(s=>{if(!s)return;tpl.append(/^\[/.test(s)?el("span",{class:"blank",text:s.slice(1,-1)}):document.createTextNode(s));});
+      const note=el("p",{class:"gnote","aria-live":"polite"});
+      const use=el("button",{type:"button",class:"btn ghost",text:"Start from this template",style:"justify-self:start;padding:9px 16px;font-size:14.5px"});
+      use.addEventListener("click",()=>{const ta=root.querySelector(`[name="${key}"]`);if(!ta)return;if(ta.value.trim()){note.textContent="The box below already has text. Clear it first to start from the template.";return;}ta.value=TPL;ta.dispatchEvent(new Event("input",{bubbles:true}));ta.focus();ta.setSelectionRange(0,0);note.textContent="Template added below. Replace every [bracket], then rewrite it until it sounds like you, not the template.";});
+      add("Template",[el("p",{class:"meta",text:G.tplNote}),tpl,use,note]);
+      const S=G.sample;
+      const sp=el("p");S.forEach(([t,part])=>sp.append(el("mark",{"data-part":part,text:t})));
+      const words=S.map(x=>x[0]).join("").trim().split(/\s+/).length;
+      add("Sample",[el("div",{class:"sample",style:"display:grid;gap:8px"},[el("span",{class:"sample-label",text:`Made-up example · ${words} words · shows the structure, don't copy the words`}),el("h4",{text:G.sampleTitle}),sp])]);
+      const caution=el("p",{class:"caution"},[el("b",{text:"A checklist, not a script. "}),document.createTextNode("Don't copy it. Write it your way.")]);
+      box.append(caution,tabs,panes);first.click();
+      return box;
+    }
+
+    function renderStep(){
+      const s=STEPS()[idx],n=STEPS().length;root.replaceChildren();
+      const top=el("div",{class:"flow-top"},[el("span",{class:"eyebrow",text:`Move ${F.move} · ${F.label}`}),el("span",{class:"count"+(editing?" editing":""),text:editing?`Editing · step ${idx+1} of ${n}`:`Step ${idx+1} of ${n}`})]);
+      syncId();
+      if(kind==="activity"&&!showId){const q=qInfo();const who=el("button",{type:"button",class:"as-who",title:"Not you? Change name or email",text:`as ${q.name} · not you?`});who.addEventListener("click",()=>{readStep();showId=true;idx=0;renderStep();focusHead();});top.insertBefore(who,top.lastChild);}
+      const bar=el("div",{class:"bar"},el("i",{style:`width:${Math.round(idx/n*100)}%`}));
+      const body=el("div",{class:"flow-body"});
+      if(s.time)body.append(el("p",{class:"step-time",text:s.time}));
+      body.append(el("h3",{class:"step-h",text:s.h,tabindex:"-1"}));
+      if(s.p)body.append(el("p",{class:"step-p",text:s.p}));
+      s.f.forEach(f=>{if(s.guide===f.k)body.append(guideEl(f.k));body.append(field(f));});
+      if(s.stuck){const PP=profileOf();const d=el("details",{class:"stuck"},[el("summary",{text:"stuck? start here"}),el("p",{text:`Search “${PP.role||"design"}” on LinkedIn Jobs or Naukri and filter by your city. Then try one of these for the unexpected one:`}),el("p",{text:"Banks and fintech · hospitals and health-tech · government digital services · ed-tech · NGOs · automotive and EV · manufacturing software · agri-tech · retail · gaming and media · climate and sustainability · consulting firms · craft and heritage brands"})]);body.append(d);}
+      body.append(el("p",{class:"err","aria-live":"polite"}));
+      const back=el("button",{type:"button",class:"btn quiet",text:"← Back"});back.hidden=idx===0;
+      const last=idx===n-1;
+      const next=el("button",{type:"button",class:editing?"btn ghost":"btn",text:last?(editing?"Save changes":"Send it"):"Next →"});
+      const right=[el("span",{class:"hint",text:last||editing?"":"or press Enter"})];
+      if(editing){
+        const cancel=el("button",{type:"button",class:"btn quiet",text:"Cancel"});
+        cancel.addEventListener("click",()=>{editing=false;const saved=store.get(DRAFT+"-saved");if(saved){data={...saved};store.set(DRAFT,data);}renderDone(store.get(SENT));focusHead();});
+        right.push(cancel);
+        if(!last){right.push(next);const save=el("button",{type:"button",class:"btn",text:"Save changes"});save.addEventListener("click",()=>saveEdit(save));right.push(save);}
+        else{next.className="btn";right.push(next);}
+      }else right.push(next);
+      const nav=el("div",{class:"flow-nav"},[back,el("div",{class:"btn-row"},right)]);
+      root.append(top,bar,body,nav);
+      back.addEventListener("click",()=>{readStep();idx--;renderStep();focusHead();});
+      next.addEventListener("click",()=>advance(next));
+      body.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.tagName==="INPUT"){e.preventDefault();advance(next);}});
+      body.addEventListener("input",()=>{body.querySelector(".err").textContent="";clearTimeout(body._t);body._t=setTimeout(readStep,500);});
+    }
+    function focusHead(){const h=root.querySelector(".step-h");if(h)h.focus({preventScroll:true});const r=root.getBoundingClientRect();if(r.top<60||r.top>window.innerHeight*.5)root.scrollIntoView({behavior:"smooth",block:"start"});}
+    function advance(btn){
+      readStep();const bad=invalid();
+      if(bad){root.querySelector(".err").textContent=bad.t==="email"&&data[bad.k]?"that email doesn't look right":`this one's needed: ${bad.l.toLowerCase()}`;const i=root.querySelector(`[name="${bad.k}"]`);if(i)i.focus();return;}
+      if(idx<STEPS().length-1){idx++;renderStep();focusHead();}else if(editing)saveEdit(btn);else submit(btn);
+    }
+    function saveEdit(btn){
+      readStep();const bad=invalid();
+      if(bad){root.querySelector(".err").textContent=`this one's needed: ${bad.l.toLowerCase()}`;return;}
+      const all=invalidAll();
+      if(all){idx=all.i;renderStep();focusHead();root.querySelector(".err").textContent=`this one's needed: ${all.f.l.toLowerCase()}`;return;}
+      submit(btn);
+    }
+
+    async function submit(btn){
+      const label=btn.textContent;btn.disabled=true;btn.textContent=editing?"Saving…":"Sending…";
+      await ready;let saved=false;
+      if(DB&&ME){try{await DB.doc(kind+"/"+ME).set({...data,submittedAt:new Date().toISOString()});saved=true;}catch(e){}}
+      if(!saved){const L=LABELS[kind];const f={_subject:`[Pilot] ${F.title}${editing?" (updated)":""} — ${data.name||""}`,form_type:kind,_replyto:data.email||""};for(const[k,lab]of Object.entries(L))f[lab]=data[k];saved=await postForm(f);}
+      if(saved){const now=new Date().toISOString();const wasEdit=editing;editing=false;store.set(DONE,true);store.set(SENT,now);store.set(DRAFT+"-saved",data);renderDone(now,wasEdit);setStatus(F.move,true);try{renderDaily();}catch(e){}return;}
+      btn.disabled=false;btn.textContent=label;
+      showFallback();
+    }
+    function asText(){const L=LABELS[kind];const lines=[`${F.title} — ${data.name||""}`,""];for(const[k,lab]of Object.entries(L)){const v=data[k];const s=Array.isArray(v)?v.join("; "):(v||"");if(s)lines.push(`${lab}: ${s}`);}return lines.join("\n");}
+    function showFallback(){
+      root.querySelector(".result")?.remove();
+      const text=asText();const ta=el("textarea",{readonly:true,"aria-label":"Your answers as text"});ta.value=text;
+      const copy=el("button",{type:"button",class:"btn",text:"Copy my answers"});const msg=el("span",{class:"meta","aria-live":"polite"});
+      copy.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(text);msg.textContent="Copied. Paste it into an email to the address above.";}catch(e){ta.focus();ta.select();msg.textContent="Text selected. Press Ctrl+C (or ⌘C) to copy.";}});
+      const subj=encodeURIComponent(`${F.title} — ${data.name||""}`),body=encodeURIComponent(text.length>1800?text.slice(0,1800)+"\n[…paste the rest from the page]":text);
+      const mail=el("a",{class:"btn ghost",href:`mailto:${CONTACT}?subject=${subj}&body=${body}`,target:"_blank",rel:"noopener",text:"Open in my email app"});
+      const p=el("p");p.append("Copy your answers and email them to ",el("span",{class:"addr",text:CONTACT}),". The email button works where your device allows it.");
+      const done=el("button",{type:"button",class:"btn quiet",text:"I've sent it"});
+      done.addEventListener("click",()=>{const wasEdit=editing;editing=false;store.set(DONE,true);store.set(DRAFT+"-saved",data);renderDone(null,wasEdit);setStatus(F.move,true);try{renderDaily();}catch(e){}});
+      const box=el("div",{class:"result"},[el("strong",{text:"one more step: send your answers"}),p,ta,el("div",{class:"btn-row"},[copy,mail,done]),msg]);
+      root.append(box);box.scrollIntoView({behavior:"smooth",block:"nearest"});
+    }
+    const showVal=f=>{const v=data[f.k];if(Array.isArray(v))return v.join(", ");if(f.t==="scale")return v?v+"/5":"";return String(v||"").replace(/\s+/g," ");};
+    function answersList(){
+      const ul=el("ul",{class:"ans"});
+      STEPS().forEach((st,i)=>{let t=st.f.map(showVal).filter(Boolean).join(" · ");if(t.length>90)t=t.slice(0,88)+"…";
+        const b=el("button",{type:"button",text:"Edit"});b.addEventListener("click",()=>{store.set(DRAFT+"-saved",{...data});editing=true;idx=i;renderStep();focusHead();});
+        ul.append(el("li",{},[el("b",{text:st.h}),el("span",{text:t||"—"}),b]));});
+      return el("details",{class:"answers"},[el("summary",{text:"your answers · edit any step and resubmit"}),ul]);
+    }
+    function renderDone(when,updated){
+      root.replaceChildren();
+      when=when||store.get(SENT);
+      const stamp=when?`${updated?"Updated":"Sent"} ${fmt(when)}. `:(updated?"Updated. ":"");
+      const edit=answersList();
+      const go=el("a",{class:"btn",href:F.next,text:F.nextLabel+" →"});
+      if(F.move===1){
+        const P=profileOf();
+        const dl=el("dl",{class:"sp"});
+        const row=(k,v,sm)=>{const dd=el("dd",{},[v]);if(sm)dd.append(" ",el("small",{text:sm}));dl.append(el("dt",{text:k}),dd);};
+        row("Aiming for",P.role||"Still deciding",P.role?(P.unsure?"(still exploring)":""):"Your plan starts by helping you choose.");
+        if(P.weak)row("Your first focus",P.weak[1],`you rated it ${P.scores[P.weak[0]]}/5`);
+        if(P.session)row("Focus for your hour",P.session);
+        root.append(el("div",{class:"bar"},el("i",{style:"width:100%"})),el("div",{class:"done-panel"},[
+          el("span",{class:"big",text:"your starting point"}),dl,
+          el("p",{text:stamp+"Next, the prep. It turns this into your own daily plan."}),
+          el("div",{class:"btn-row"},[go]),edit]));
+        return;
+      }
+      root.append(el("div",{class:"bar"},el("i",{style:"width:100%"})),el("div",{class:"done-panel"},[
+        el("span",{class:"big",text:`move ${F.move} done`}),
+        el("h3",{text:F.move===1?"Good. That's the hardest part: starting.":"Your prep is in."}),
+        el("p",{text:stamp+(F.move===1?"Next, the prep. Block two hours this week; it makes your hour count.":"Ravi will read your work and email you to fix a time for your one-hour session. Your daily plan below now uses the names you chose.")}),
+        el("div",{class:"btn-row"},[go]),edit
+      ]));
+    }
+
+    if(store.get(DONE)){renderDone(null);setStatus(F.move,true);}else renderStep();
+    return{load:async()=>{if(!(DB&&ME))return;try{const snap=await DB.doc(kind+"/"+ME).get();if(snap.exists){const d=snap.data();data={...d};delete data.submittedAt;store.set(DRAFT,data);store.set(DRAFT+"-saved",data);store.set(DONE,true);if(d.submittedAt)store.set(SENT,d.submittedAt);if(!editing)renderDone(d.submittedAt);setStatus(F.move,true);}}catch(e){}}};
+  }
+
+
+  /* ---------- daily habit ---------- */
+  const SITE_URL="https://pilot.studiotowork.aiparlor.in";
+  const ASSETS={direction:"Direction",portfolio:"Portfolio",case:"Case study",resume:"Resume",profile:"LinkedIn / Behance",outreach:"Outreach",interview:"Interview"};
+  function profileOf(){
+    const q=store.get("stws-questionnaire")||{},a=store.get("stws-activity")||{};
+    const first=x=>String(x||"").replace(/https?:\/\/\S+/g,"").split(/·|,|\||\s-\s|—|–/)[0].trim();
+    const all=Array.isArray(q.roles)?q.roles:[];const roles=all.filter(r=>r!=="Not sure yet");
+    const sc=k=>Number(q[k])||0;const scores={r_role:sc("r_role"),r_portfolio:sc("r_portfolio"),r_interview:sc("r_interview")};
+    const rated=scores.r_role||scores.r_portfolio||scores.r_interview;
+    const unsure=(all.includes("Not sure yet")&&!roles.length)||(scores.r_role&&scores.r_role<=2);
+    const opts=[["r_role","Choosing your direction","direction"],["r_portfolio","Your portfolio","portfolio"],["r_interview","Interview practice","interview"]];
+    let weak=null;if(rated){weak=opts[0];opts.forEach(o=>{if(scores[o[0]]<scores[weak[0]])weak=o;});}
+    return{name:a.name||q.name||"",role:roles[0]||"",unsure:!!unsure,scores,weak,session:q.session||"",hasQ:!!rated,
+      org1:first(a.t1_obvious),org2:first(a.t1_unexpected),org3:first(a.t1_small),designer:first(a.t3_designer),title:String(a.t2_title||"").trim()};
+  }
+  const Q=t=>"“"+t+"”";
+  const POOL={
+    direction:[
+      ["d1",P=>"Read three job posts for two different design roles. Which one excites you more?"],
+      ["d2",P=>"List the three projects you enjoyed most. What role were you playing in each?"],
+      ["d3",P=>"Message one designer in a role you're curious about. Ask what their week looks like."],
+      ["d4",P=>"Pick one target role for the next 30 days. Write it at the top of your resume."],
+      ["d5",P=>"Find five organisations hiring for that role. Save them in one list."]],
+    portfolio:[
+      ["p1",P=>"Move your strongest project to the top of your portfolio."],
+      ["p2",P=>"Cut one weak project from your portfolio."],
+      ["p3",P=>`Rewrite your portfolio's first line to say you're aiming for ${P.role?P.role+" roles":"one clear role"}.`],
+      ["p4",P=>`Add one process image (sketch, map, wireframe) to ${P.title?Q(P.title):"your hero project"}.`],
+      ["p5",P=>"Open your portfolio on your phone. Fix anything broken."],
+      ["p6",P=>"Show your portfolio to someone for 10 seconds. Ask what they remember."]],
+    case:[
+      ["c1",P=>`Write the problem behind ${P.title?Q(P.title):"your hero project"} in two sentences.`],
+      ["c2",P=>`Add one real number to ${P.title?Q(P.title):"your case study"}: people, weeks or results.`],
+      ["c3",P=>"Write the key decision in your case study: what you chose, and what you rejected."],
+      ["c4",P=>"Add a “what I'd do next” line to your case study."],
+      ["c5",P=>"Turn one paragraph of your case study into a captioned image."],
+      ["c6",P=>"Outline a second case study: problem, role, insight, decision, outcome."]],
+    resume:[
+      ["r1",P=>"Rewrite one resume bullet as an outcome, not a task."],
+      ["r2",P=>"Trim your resume to one page."],
+      ["r3",P=>`Tailor your resume headline for ${P.org1||"one role you'd apply for this week"}.`],
+      ["r4",P=>"Put your portfolio link at the top of your resume."]],
+    profile:[
+      ["f1",P=>`Rewrite your LinkedIn headline: ${P.role||"the designer you are"}, plus your focus.`],
+      ["f2",P=>"Post one process image from your hero project with a two-line caption."],
+      ["f3",P=>P.org2?`Follow ${P.org2} and three designers who work there.`:"Follow five studios or companies in your target industry."],
+      ["f4",P=>`Leave one thoughtful comment on a post by ${P.designer||"a designer you admire"}.`]],
+    outreach:[
+      ["o1",P=>`Send your drafted message to ${P.designer||"the designer you picked"}.`],
+      ["o2",P=>P.org1?`Apply to ${P.org1}. Tailor one line of your note to them.`:"Apply to one role that fits. Tailor one line of your note."],
+      ["o3",P=>`Find the design lead at ${P.org2||"an organisation you like"} on LinkedIn. Follow them.`],
+      ["o4",P=>`Look up ${P.org3||"a small studio you like"}: what do they design, and for whom?`],
+      ["o5",P=>`Follow up with ${P.designer||"anyone you messaged"} if there's no reply after a week.`],
+      ["o6",P=>`Find two more ${P.role?P.role+" ":""}job posts. Note the skills they repeat.`],
+      ["o7",P=>P.org3?`Email ${P.org3} your portfolio link and one line on why them.`:"Apply to one more role this week."],
+      ["o8",P=>"Ask one senior or alumnus for a 15-minute portfolio review."]],
+    interview:[
+      ["i1",P=>"Practise your 3-minute hero project walkthrough aloud. Record it."],
+      ["i2",P=>"Answer aloud: “Tell me about a time you got critical feedback.”"],
+      ["i3",P=>`Answer aloud: “Why do you want to work at ${P.org1||"this company"}?”`]]
+  };
+  const TASK={};Object.entries(POOL).forEach(([a,list])=>list.forEach(([id,fn])=>TASK[id]={a,fn}));
+  function buildPlan(P){
+    const w={portfolio:1,case:1,resume:1,profile:1,outreach:1,interview:1};
+    if(P.scores.r_portfolio&&P.scores.r_portfolio<=2){w.portfolio=2;w.case=2;}
+    if(P.scores.r_interview&&P.scores.r_interview<=2)w.interview=2;
+    let order=["portfolio","case","outreach","resume","profile","interview"];
+    if(P.weak&&P.weak[2]==="interview")order=["interview","outreach","portfolio","case","resume","profile"];
+    if(P.org1||P.designer)order=order.filter(a=>a!=="outreach").slice(0,1).concat(["outreach"],order.filter(a=>a!=="outreach").slice(1));
+    const pre=P.unsure?POOL.direction.map(x=>x[0]):[],core=[],ptr={};
+    while(core.length<30)order.forEach(a=>{for(let k=0;k<w[a];k++){const L=POOL[a],i=(ptr[a]||0)%L.length;ptr[a]=(ptr[a]||0)+1;core.push(L[i][0]);}});
+    return{pre,core:core.slice(0,30)};
+  }
+  const planAt=(pl,n)=>n<pl.pre.length?pl.pre[n]:pl.core[(n-pl.pre.length)%pl.core.length];
+  const DKEY="stws-daily",SKEY="stws-swap";
+  const dayKey=d=>{const z=n=>String(n).padStart(2,"0");return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;};
+  const parseKey=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d);};
+  const daysBetween=(a,b)=>Math.round((parseKey(b)-parseKey(a))/86400000);
+  const todayKey=()=>dayKey(new Date());
+  function streakOf(d){if(!d||!d.done)return 0;let n=0;const t=new Date();if(!d.done[dayKey(t)])t.setDate(t.getDate()-1);while(d.done[dayKey(t)]){n++;t.setDate(t.getDate()-1);}return n;}
+  function taskFor(d){const k=todayKey(),P=profileOf(),pl=buildPlan(P),idx=Math.max(0,daysBetween(d.start,k));const swap=(store.get(SKEY)||{})[k]||0;const id=(d.done&&TASK[d.done[k]])?d.done[k]:planAt(pl,idx+swap*3);return{id,day:idx+1,P,next:[1,2,3].map(j=>planAt(pl,idx+j))};}
+  let daily=store.get(DKEY),dWriting=Promise.resolve(),dHireForm=false;
+  function saveDaily(){
+    daily.updated=new Date().toISOString();
+    store.set(DKEY,daily);
+    if(DB&&ME){const snap=JSON.parse(JSON.stringify(daily));dWriting=dWriting.then(()=>DB.doc("daily/"+ME).set(snap)).catch(()=>{});}
+    renderDaily();
+  }
+  const myName=()=>((store.get("stws-activity")||{}).name||(store.get("stws-questionnaire")||{}).name||"");
+  function startDaily(){daily={name:myName(),start:todayKey(),done:{},wins:{applied:0,interview:0,offer:0},hired:null};saveDaily();}
+  function reminderLink(){
+    const d=new Date();d.setDate(d.getDate()+1);const z=n=>String(n).padStart(2,"0");const ymd=`${d.getFullYear()}${z(d.getMonth()+1)}${z(d.getDate())}`;
+    let tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"";}catch(e){}
+    const q=new URLSearchParams({action:"TEMPLATE",text:"15 minutes on my job assets",details:"Today's task: "+SITE_URL+"#daily",dates:`${ymd}T090000/${ymd}T091500`,recur:"RRULE:FREQ=DAILY"});if(tz)q.set("ctz",tz);
+    return "https://calendar.google.com/calendar/render?"+q.toString();
+  }
+  function renderDaily(){
+    const root=$("#dailyCard");root.replaceChildren();
+    if(!daily){
+      const go=el("button",{type:"button",class:"btn",text:"Start my daily habit"});go.addEventListener("click",startDaily);
+      const intro=el("div",{class:"d-intro"});intro.innerHTML=`<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14 H56 V54 H8 Z M8 24 H56 M18 8 V18 M46 8 V18"/><path d="M15 32 H21 M27 32 H33 M39 32 H45 M15 40 H21 M27 40 H33" opacity=".6"/><path d="M38 42 L43 47 L52 36" style="stroke:var(--sanguine)" stroke-width="2.2"/></svg>`;
+      intro.append(el("div",{},[el("h3",{text:"One small task a day"}),el("p",{text:"On your portfolio, case study, resume, profile or outreach."})]),go);
+      root.append(intro);return;
+    }
+    const doneCount=Object.keys(daily.done||{}).length;
+    if(daily.hired){
+      const undo=el("button",{type:"button",class:"btn quiet",text:"Undo"});undo.addEventListener("click",()=>{daily.hired=null;saveDaily();});
+      const where=[daily.hired.role,daily.hired.company].filter(Boolean).join(" at ");
+      root.append(el("div",{class:"d-hired"},[el("span",{class:"big",text:"you're hired"}),el("h3",{text:where?`Congratulations: ${where}.`:"Congratulations."}),el("p",{text:`${doneCount} tasks over ${daysBetween(daily.start,daily.hired.at||todayKey())+1} days. That's what proof looks like.`}),undo]));
+      return;
+    }
+    const k=todayKey(),T=taskFor(daily),tk=TASK[T.id],done=daily.done[k]!=null,streak=streakOf(daily),P=T.P;
+    const left=el("div",{class:"d-today"});
+    left.append(el("div",{class:"d-top"},[el("span",{class:"d-day",text:`Day ${T.day} · about 15 minutes`}),el("span",{class:"d-streak",text:streak?`${streak}-day streak`:"start your streak today"})]));
+    left.append(el("span",{class:"d-chip",text:ASSETS[tk.a]}),el("h3",{class:"d-task",text:tk.fn(P)}));
+    const row=el("div",{class:"btn-row"});
+    if(done){
+      const undo=el("button",{type:"button",class:"btn quiet",text:"Undo"});undo.addEventListener("click",()=>{delete daily.done[k];saveDaily();});
+      row.append(el("span",{class:"d-done",text:"done for today. see you tomorrow"}),undo);
+    }else{
+      const ok=el("button",{type:"button",class:"btn",text:"Done ✓"});ok.addEventListener("click",()=>{daily.done[k]=T.id;if(!daily.name)daily.name=myName();saveDaily();});
+      const sw=el("button",{type:"button",class:"btn quiet",text:"Show another"});sw.addEventListener("click",()=>{const m=store.get(SKEY)||{};m[k]=(m[k]||0)+1;store.set(SKEY,m);renderDaily();});
+      row.append(ok,sw);
+    }
+    left.append(row);
+    const side=el("div",{class:"d-side"});
+    const cal=el("div",{class:"d-cal","aria-label":`${doneCount} days done`});
+    for(let n=27;n>=0;n--){const d=new Date();d.setDate(d.getDate()-n);const dk=dayKey(d);const c=el("i",{title:dk});if(daysBetween(daily.start,dk)<0)c.className="pre";else if(daily.done[dk]!=null)c.className="on";if(n===0)c.classList.add("now");cal.append(c);}
+    const counts={};Object.values(daily.done).forEach(id=>{const t=TASK[id];if(t)counts[t.a]=(counts[t.a]||0)+1;});const max=Math.max(1,...Object.values(counts));
+    const bars=el("div",{class:"d-bars"});Object.entries(ASSETS).filter(([a])=>a!=="direction"||P.unsure||counts.direction).forEach(([a,l])=>{const v=counts[a]||0;bars.append(el("div",{class:"d-bar"},[el("span",{text:l}),el("b",{},el("i",{style:`width:${Math.round(v/max*100)}%`})),el("span",{text:String(v)})]));});
+    const nx=el("ol");T.next.forEach(id=>{const t=TASK[id];nx.append(el("li",{},[el("span",{text:ASSETS[t.a]}),t.fn(P)]));});
+    side.append(el("div",{class:"d-next"},[el("span",{class:"cap",text:"coming up"}),nx]),el("div",{style:"display:grid;gap:8px"},[cal,el("span",{class:"d-cap",text:`last 4 weeks · ${doneCount} done in total`})]),bars);
+    const foot=el("div",{class:"d-foot"});
+    const wins=el("div",{class:"d-wins"},[el("span",{text:"Log a win:"})]);
+    [["applied","Applied"],["interview","Interview"],["offer","Offer"]].forEach(([w,l])=>{const b=el("button",{type:"button",class:"d-win"},[l,el("b",{text:String((daily.wins||{})[w]||0)})]);b.addEventListener("click",()=>{daily.wins=daily.wins||{};daily.wins[w]=(daily.wins[w]||0)+1;saveDaily();if(w!=="applied")postForm({_subject:`[Pilot] New ${l.toLowerCase()}: ${daily.name||myName()}`,form_type:"win",Name:daily.name||myName(),Win:l,"Tasks done":Object.keys(daily.done||{}).length});});wins.append(b);});
+    const hire=el("button",{type:"button",class:"btn ghost",text:"I got the job!",style:"padding:9px 16px;font-size:14.5px;margin-left:auto"});hire.addEventListener("click",()=>{dHireForm=!dHireForm;renderDaily();});
+    foot.append(wins,el("a",{class:"d-link",href:reminderLink(),target:"_blank",rel:"noopener",text:"Add a daily reminder ↗"}),hire);
+    const fc=el("div",{class:"d-focus"},[el("span",{class:"hand",text:"built for you"})]);
+    if(P.hasQ){if(P.weak)fc.append("focus",el("b",{text:P.weak[1]}));fc.append("aiming for",el("b",{text:P.role||"still deciding"}));
+      const names=[P.org1,P.org2,P.org3,P.designer].filter(Boolean).length;if(names)fc.append(el("b",{text:`${names} name${names>1?"s":""} from your prep`}));}
+    else fc.append("Do ",el("a",{href:"#move1",text:"move 1"})," and ",el("a",{href:"#move2",text:"move 2"})," to make this plan yours.");
+    root.append(fc,el("div",{class:"d-grid"},[left,side]),foot);
+    if(dHireForm){
+      const f=el("form",{class:"d-foot d-form"});const c=el("input",{type:"text",id:"hire_company",placeholder:"Company"}),r=el("input",{type:"text",id:"hire_role",placeholder:"Role"});
+      f.append(el("label",{for:"hire_company"},["Where? (optional)",c]),el("label",{for:"hire_role"},["What role? (optional)",r]),el("button",{type:"submit",class:"btn",text:"Celebrate"}));
+      f.addEventListener("submit",e=>{e.preventDefault();dHireForm=false;daily.hired={at:todayKey(),company:c.value.trim(),role:r.value.trim()};saveDaily();postForm({_subject:`[Pilot] Hired! ${daily.name||myName()}`,form_type:"hired",Name:daily.name||myName(),Company:daily.hired.company,Role:daily.hired.role,"Tasks done":Object.keys(daily.done||{}).length,"Started":daily.start});});
+      root.append(f);setTimeout(()=>c.focus(),50);
+    }
+  }
+  renderDaily();
+  async function loadDaily(){if(!(DB&&ME))return;try{const snap=await DB.doc("daily/"+ME).get();if(snap.exists){const r=snap.data();if(!daily||String(r.updated||"")>String(daily.updated||"")){daily=r;store.set(DKEY,daily);renderDaily();}}else if(daily){saveDaily();}}catch(e){}}
+
+  const flows={questionnaire:makeFlow("questionnaire"),activity:makeFlow("activity")};
+  ready.then(async()=>{await flows.questionnaire.load();await flows.activity.load();await loadDaily();let owner=false;try{owner=USER?await USER.isOwner():false}catch(e){}if(owner&&DB)startOwnerView();});
+
+  /* owner view */
+  const SUBS={questionnaire:[],activity:[],daily:[]};let current="questionnaire";
+  function startOwnerView(){
+    $("#responses").hidden=false;
+    for(const kind of["questionnaire","activity"]){
+      DB.collection(kind).onSnapshot(snap=>{SUBS[kind]=snap.docs.filter(d=>d.exists).map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.submittedAt).localeCompare(String(a.submittedAt)));$(kind==="questionnaire"?"#cq":"#ca").textContent=SUBS[kind].length;if(kind===current)renderTable();},()=>{});
+    }
+    DB.collection("daily").onSnapshot(snap=>{SUBS.daily=snap.docs.filter(d=>d.exists).map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.updated).localeCompare(String(a.updated)));$("#cd").textContent=SUBS.daily.length;if(current==="daily")renderTable();},()=>{});
+    document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{current=t.dataset.kind;document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===t));renderTable();}));
+    $("#copyCsv").addEventListener("click",async()=>{if(current==="daily"){const esc=v=>{const s=v==null?"":String(v);return/[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s;};const csv=[["Name","Started","Days done","Streak","Applied","Interviews","Offers","Hired","Company","Role","Last active"].join(","),...SUBS.daily.map(r=>[r.name,r.start,Object.keys(r.done||{}).length,streakOf(r),(r.wins||{}).applied||0,(r.wins||{}).interview||0,(r.wins||{}).offer||0,r.hired?"Yes":"",r.hired&&r.hired.company,r.hired&&r.hired.role,r.updated].map(esc).join(","))].join("\n");try{await navigator.clipboard.writeText(csv);$("#csvMsg").textContent=`Copied ${SUBS.daily.length} rows. Paste into Sheets or Excel.`;}catch(e){$("#csvMsg").textContent="Copy was blocked in this view. Open the page in your browser and try again.";}return;}
+      const L=LABELS[current],keys=Object.keys(L);const esc=v=>{const s=Array.isArray(v)?v.join("; "):(v==null?"":String(v));return/[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s;};
+      const csv=[["Submitted",...keys.map(k=>L[k])].map(esc).join(","),...SUBS[current].map(r=>[r.submittedAt,...keys.map(k=>r[k])].map(esc).join(","))].join("\n");
+      try{await navigator.clipboard.writeText(csv);$("#csvMsg").textContent=`Copied ${SUBS[current].length} rows. Paste into Sheets or Excel.`;}catch(e){$("#csvMsg").textContent="Copy was blocked in this view. Open the page in your browser and try again.";}});
+    renderTable();
+  }
+  function renderTable(){
+    const wrap=$("#subsTable"),rows=SUBS[current];wrap.replaceChildren();
+    if(current==="daily"){
+      if(!rows.length){wrap.append(el("p",{class:"empty",text:"No one has started the daily habit yet. Students appear here once they start."}));return;}
+      const tbl=el("table",{class:"subs"});const hr=el("tr");["Name","Days done","Streak","Wins (applied · interview · offer)","Status","Last active"].forEach(h=>hr.append(el("th",{text:h})));tbl.append(el("thead",{},hr));const tb=el("tbody");
+      rows.forEach(r=>{const w=r.wins||{};const st=r.hired?("Hired"+(r.hired.company?" · "+r.hired.company:"")):(r.done&&r.done[todayKey()]!=null?"Done today":"Active");tb.append(el("tr",{},[el("td",{text:r.name||"—"}),el("td",{text:String(Object.keys(r.done||{}).length)}),el("td",{text:String(streakOf(r))}),el("td",{text:`${w.applied||0} · ${w.interview||0} · ${w.offer||0}`}),el("td",{text:st}),el("td",{class:"when",text:fmt(r.updated)})]));});
+      tbl.append(tb);wrap.append(tbl);return;
+    }
+    if(!rows.length){wrap.append(el("p",{class:"empty",text:current==="questionnaire"?"No move 1 answers yet. They appear here as students submit.":"No prep submissions yet. They appear here as students submit."}));return;}
+    const cols=current==="questionnaire"?[["name","Name"],["level","Level"],["discipline","Discipline"],["session","Needs most"]]:[["name","Name"],["t2_title","Hero project"],["portfolio","Portfolio"]];
+    const L=LABELS[current];const tbl=el("table",{class:"subs"});const hr=el("tr");cols.forEach(c=>hr.append(el("th",{text:c[1]})));hr.append(el("th",{text:"Submitted"}));tbl.append(el("thead",{},hr));
+    const tb=el("tbody");
+    rows.forEach(r=>{const tr=el("tr",{class:"row",tabindex:"0","aria-expanded":"false"});cols.forEach(c=>tr.append(el("td",{text:(Array.isArray(r[c[0]])?r[c[0]].join(", "):r[c[0]])||"—"})));tr.append(el("td",{class:"when",text:fmt(r.submittedAt)}));
+      const det=el("tr",{class:"detail",hidden:true}),dl=el("dl");for(const[k,lab]of Object.entries(L)){const v=r[k];const s=Array.isArray(v)?v.join("; "):(v==null?"":String(v));if(s)dl.append(el("dt",{text:lab}),el("dd",{text:s}));}
+      det.append(el("td",{colspan:String(cols.length+1)},dl));const tg=()=>{det.hidden=!det.hidden;tr.setAttribute("aria-expanded",!det.hidden);};
+      tr.addEventListener("click",tg);tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();tg();}});tb.append(tr,det);});
+    tbl.append(tb);wrap.append(tbl);
+  }
+
+
+  /* ---------- start fresh on a shared device ---------- */
+  (function(){
+    const btn=$("#freshBtn"),bar=$("#freshBar");
+    const keys=()=>{try{return Object.keys(localStorage).filter(k=>k.startsWith("stws"));}catch(e){return [];}};
+    const refresh=()=>{const has=keys().length>0;btn.hidden=!has;if(has){const n=String((store.get("stws-questionnaire")||{}).name||(store.get("stws-activity")||{}).name||"").trim().split(/\s+/)[0];btn.replaceChildren();if(n)btn.append(el("span",{class:"fresh-who",text:`Not ${n}? `}));btn.append("Start fresh");}else bar.hidden=true;};
+    refresh();setInterval(refresh,1500);
+    btn.addEventListener("click",()=>{bar.hidden=false;$("#freshYes").focus();});
+    $("#freshNo").addEventListener("click",()=>{bar.hidden=true;btn.focus();});
+    $("#freshYes").addEventListener("click",()=>{keys().forEach(k=>{try{localStorage.removeItem(k);}catch(e){}});window.scrollTo(0,0);location.reload();});
+  })();
+  /* ---------- help ---------- */
+  (function(){
+    const fab=$("#helpFab"),panel=$("#helpPanel"),status=$("#helpStatus");
+    const open=on=>{panel.hidden=!on;fab.setAttribute("aria-expanded",String(on));if(on){const who=store.get("stws-activity")||store.get("stws-questionnaire")||{};if(!$("#help_name").value)$("#help_name").value=who.name||"";if(!$("#help_email").value)$("#help_email").value=who.email||"";status.textContent="";status.className="help-msg";setTimeout(()=>($("#help_name").value?$("#help_msg"):$("#help_name")).focus(),30);}else fab.focus();};
+    fab.addEventListener("click",()=>open(panel.hidden));
+    $("#helpFoot").addEventListener("click",e=>{e.preventDefault();open(true);});
+    $("#helpClose").addEventListener("click",()=>open(false));
+    document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!panel.hidden)open(false);});
+    panel.addEventListener("submit",async e=>{
+      e.preventDefault();
+      const name=$("#help_name").value.trim(),email=$("#help_email").value.trim(),msg=$("#help_msg").value.trim();
+      status.className="help-msg bad";
+      if(!msg){status.textContent="write your question first";$("#help_msg").focus();return;}
+      if(!/^\S+@\S+\.\S+$/.test(email)){status.textContent="add your email so Ravi can reply";$("#help_email").focus();return;}
+      const btn=$("#helpSend");btn.disabled=true;btn.textContent="Sending…";
+      const ok=await postForm({_subject:`[Pilot] Help request — ${name||email}`,form_type:"support",Name:name,Email:email,Question:msg,Page:(location.hash||"")});
+      btn.disabled=false;btn.textContent="Send to Ravi";
+      if(ok){status.className="help-msg ok";status.textContent="sent. Ravi will reply by email";$("#help_msg").value="";}
+      else{status.className="help-msg bad";status.replaceChildren("couldn't send just now. Please email ",el("a",{href:`mailto:${CONTACT}?subject=${encodeURIComponent("Studio to Work help")}&body=${encodeURIComponent(msg)}`,text:CONTACT}));}
+    });
+  })();
+})();
+</script>
+
+</body>
+</html>
