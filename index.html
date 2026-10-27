@@ -90,6 +90,12 @@ section{padding-block:56px}
 .move .n{font-family:var(--serif);font-size:60px;font-weight:700;line-height:.85;color:var(--sanguine)}
 .mi{width:42px;height:42px;margin-right:auto;margin-left:14px;align-self:center}
 .move.done .n{color:var(--paper-line)}
+.move.locked{opacity:.62}
+.move.locked .status{background:transparent;border-style:dashed}
+.gate{padding:clamp(28px,4vw,48px);display:grid;gap:12px;justify-items:start}
+.gate[hidden],.flow[hidden]{display:none}
+.gate .lock{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--sanguine)}
+.gate h3{margin:0}.gate p{margin:0;color:var(--ink-soft)}
 .status{font-family:var(--mono);font-size:12px;padding:4px 9px;border-radius:var(--radius);border:1px solid var(--paper-line);color:var(--ink-faint);white-space:nowrap}
 .move.done .status{background:var(--good-bg);border-color:var(--good-bg);color:var(--good)}
 .move h3{font-size:24px}
@@ -472,6 +478,12 @@ footer .wordmark .dot{color:var(--sanguine)}
 
 <section id="move2" style="padding-top:8px">
   <div class="wrap">
+    <div class="flow gate" id="gate2" hidden>
+      <span class="lock">Move 2 · locked</span>
+      <h3>Do move 1 first</h3>
+      <p>The prep opens once you've sent move 1. It takes 5 minutes and shapes what you do here.</p>
+      <a class="btn" href="#move1">Go to move 1</a>
+    </div>
     <div class="flow" id="flow-activity"></div>
   </div>
 </section>
@@ -526,8 +538,8 @@ footer .wordmark .dot{color:var(--sanguine)}
         <p class="eyebrow">Your facilitator</p>
         <h2 style="font-size:28px;margin-top:6px">Ravi Krishnan</h2>
         <p style="color:var(--sanguine-deep);font-family:var(--serif);font-style:italic;font-size:16px;margin-top:4px">Architect &amp; designer</p>
-        <p style="margin-top:12px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">33+ years in technology-led design, spanning enterprise software design, digital content and eLearning at IBM, Wipro and Suzlon. Ravi brings his vast experience in recruiting, building and nurturing design talent in diverse organizations and contexts.</p>
-        <p style="margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">An active member of Urban Sketchers Bengaluru, Ravi captures the city's built environment in a distinctive line-drawing style.</p>
+        <p style="margin-top:12px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">33+ years in technology-led design, spanning enterprise software design, digital content and eLearning at IBM, Wipro and Suzlon.</p>
+        <p style="margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">An active member of Urban Sketchers Bengaluru, Ravi captures the city's built environment in a distinctive line-drawing style — and brings the same eye for detail to reviewing your work.</p>
         <p style="margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:62ch">B.Arch, NIT Trichy · M.Des, IDC School of Design, IIT Bombay · Executive MBA, IIM Lucknow.</p>
         <div style="margin-top:14px;display:flex;gap:20px;flex-wrap:wrap;font-size:14.5px">
           <a href="mailto:lravikrishnan@gmail.com" style="text-decoration:none;border-bottom:1px solid var(--paper-line);padding-bottom:2px">lravikrishnan@gmail.com</a>
@@ -609,6 +621,16 @@ footer .wordmark .dot{color:var(--sanguine)}
     if(!d1){cta.textContent="Start move 1";cta.href="#move1";}
     else if(!d2){cta.textContent="Start move 2";cta.href="#move2";}
     else{cta.textContent="Today's 15 minutes";cta.href="#daily";}
+    gate2();
+  }
+  // Move 2 stays locked until move 1 is sent. Editing keeps both open.
+  function gate2(){
+    const m2=$("#m2"),open=!!store.get("stws-done-questionnaire")||!!store.get("stws-done-activity");
+    m2.classList.toggle("locked",!open);
+    $("#flow-activity").hidden=!open; $("#gate2").hidden=open;
+    const b=m2.querySelector(".btn"),s=$("#s2");
+    if(!open){b.textContent="After move 1";b.href="#move1";s.textContent="Locked";}
+    else{b.href="#move2";if(!m2.classList.contains("done")){b.textContent="Start";s.textContent="Not started";}}
   }
 
   function makeFlow(kind){
@@ -1139,6 +1161,7 @@ Give up to 5 highlights, most important first. Every quote must appear verbatim 
   async function loadDaily(){if(!(DB&&ME))return;try{const snap=await DB.doc("daily/"+ME).get();if(snap.exists){const r=snap.data();if(!daily||String(r.updated||"")>String(daily.updated||"")){daily=r;store.set(DKEY,daily);renderDaily();}}else if(daily){saveDaily();}}catch(e){}}
 
   const flows={questionnaire:makeFlow("questionnaire"),activity:makeFlow("activity")};
+  gate2();
   ready.then(async()=>{await flows.questionnaire.load();await flows.activity.load();await loadDaily();let owner=false;try{owner=USER?await USER.isOwner():false}catch(e){}if(owner&&DB)startOwnerView();});
 
   /* owner view */
